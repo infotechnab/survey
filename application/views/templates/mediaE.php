@@ -32,38 +32,38 @@
             </div>
         </div>
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail' id='other'>
-                <button type="button" id='clickable' class="btn btn-primary btn-lg">Newspaper</button>
+            <div class='thumbnail btn btn-primary btn-lg' id='newspaper' style="background-color: #428bca;">
+                <h1>NEWSPAPER</h1>
             </div>
         </div>
         
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail' id='other'>
-                <button type="button" id='clickable' class="btn btn-primary btn-lg">Television</button>
+            <div class='thumbnail btn btn-primary btn-lg' id='television' style="background-color: #428bca;">
+                <h1>TELEVISION</h1>
             </div>
         </div>
         
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail' id='other'>
-                <button type="button" id='clickable' class="btn btn-primary btn-lg">F.M. Radio</button>
+            <div class='thumbnail btn btn-primary btn-lg' id='fmradio' style="background-color: #428bca;">
+                <h1>F.M. RADIO</h1>
             </div>
         </div>
         
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail' id='other'>
-                <button type="button" id='clickable' class="btn btn-primary btn-lg">Friends</button>
+            <div class='thumbnail btn btn-primary btn-lg' id='friends' style="background-color: #428bca;">
+                <h1>FRIENDS</h1>
             </div>
         </div>
         
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail' id='other'>
-                <button type="button" id='clickable' class="btn btn-primary btn-lg">Road Mic</button>
+            <div class='thumbnail btn btn-primary btn-lg' id='roadmic' style="background-color: #428bca;">
+                <h1>ROAD MIC.</h1>
             </div>
         </div>
         
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail' id='other'>
-                <button type="button" id='clickable' class="btn btn-primary btn-lg">Other</button>
+            <div class='thumbnail btn btn-primary btn-lg' id='other' style="background-color: #428bca;">
+                <h1>OTHER</h1>
             </div>
         </div>
         

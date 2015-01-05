@@ -33,38 +33,38 @@
         </div>
         
          <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail' id='other'>
-                <button type="button" id='clickable' class="btn btn-primary btn-lg">OTHER</button>
+            <div class='thumbnail btn btn-primary btn-lg' id='other' style="background-color: #428bca;">
+                <h1>PURCHASE</h1>
             </div>
         </div>
 
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail' id='other'>
-                <button type="button" id='clickable' class="btn btn-primary btn-lg">OTHER</button>
+            <div class='thumbnail btn btn-primary btn-lg' id='other' style="background-color: #428bca;">
+                <h1>INQUIRY</h1>
             </div>
         </div>
         
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail' id='other'>
-                <button type="button" id='clickable' class="btn btn-primary btn-lg">OTHER</button>
+            <div class='thumbnail btn btn-primary btn-lg' id='other' style="background-color: #428bca;">
+                <h1>INFO OF AGRI.</h1>
             </div>
         </div>
         
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail' id='other'>
-                <button type="button" id='clickable' class="btn btn-primary btn-lg">OTHER</button>
+            <div class='thumbnail btn btn-primary btn-lg' id='other' style="background-color: #428bca;">
+                <h1>INFO OF DAIRY</h1>
             </div>
         </div>
         
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail' id='other'>
-                <button type="button" id='clickable' class="btn btn-primary btn-lg">OTHER</button>
+            <div class='thumbnail btn btn-primary btn-lg' id='other' style="background-color: #428bca;">
+                <h1>INFO OF IT</h1>
             </div>
         </div>
         
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail' id='other'>
-                <button type="button" id='clickable' class="btn btn-primary btn-lg">OTHER</button>
+            <div class='thumbnail btn btn-primary btn-lg' id='other' style="background-color: #428bca;">
+                <h1>OTHER</h1>
             </div>
         </div>
         
