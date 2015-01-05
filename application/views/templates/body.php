@@ -2,6 +2,7 @@
      <script type="text/javascript">
          var base_url = "http://localhost/survey/";
   $(document).ready(function(){
+      
         $(".btn").click(function(){
             var lan = $(this).attr('id');
             
@@ -13,7 +14,7 @@
         },
   success: function(msg) 
         {    
-            $(".container").html(msg);  
+            $("#body").html(msg);  
             
         }
  });
@@ -38,8 +39,10 @@
         <p lang="ne">भाषा छनोट गर्नुहोस्.................</p>
         
         <button type="button" id="english" class="btn btn-primary btn-lg">ENTER &#9654;</button>
-        <button type="button" id="nepali" class="btn btn-primary btn-lg">सुरु गर्नुहोस् &#9654;</button>
         
+        <button type="button" id="nepali" class="btn btn-primary btn-lg">सुरु गर्नुहोस् &#9654;</button>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For English Language &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       नेपाली भाषाकोलागि</p>
     </div>
         
         <div class="col-lg-5">

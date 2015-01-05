@@ -1,0 +1,24 @@
+#male
+{
+ background: url("../images/male.png") repeat scroll 0 0 / 80% auto rgba(0, 0, 0, 0.5);
+ height: 220px;
+ opacity: 0.2;
+}
+#female
+{
+ background: url("../images/female.png") repeat scroll 0 0 / 80% auto rgba(0, 0, 0, 0.5);
+ height: 220px;
+ opacity: 0.2;
+}
+#agegroups
+{
+ background: url("../images/kiosk.jpg") repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0.5);
+ height: 300px;
+ opacity: 0.2;
+}
+#locchit, #locnaw, #locmak
+{
+ background: url("../images/kiosk.jpg") repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0.5);
+ height: 170px;
+ opacity: 0.2;
+}
