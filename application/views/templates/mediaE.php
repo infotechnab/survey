@@ -1,72 +1,53 @@
-<script src="<?php echo base_url() . 'content/scripts/jquery.min.js'; ?>"></script>
-<script type="text/javascript">
-    var base_url = "http://localhost/survey/";
-    $(document).ready(function() {
+
+<section class='nextbody'>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12" style="background-color: #efffff;">
+            <div class="col-lg-4">
+                <a href='#'><i class="fa fa-chevron-circle-left" style="font-size: 35px;"> Back </i></a>
+
+            </div>
+            <div class="col-lg-4" style="text-align: center;padding-top: 7px;">
+                <div class="progress progress-striped active" style="margin-bottom: 0px;">
+   <div class="progress-bar progress-bar-success" role="progressbar" 
+      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
+      style="width: 80%;">
+       <span class="sr-only" style="position: unset;">80% Complete</span>
+   </div>
+</div>
+            </div>
+            <div class="col-lg-4" style="text-align: right;">
+                <a href='#'><i class="fa fa-chevron-circle-right" style="font-size: 35px;"> Skip </i></a>
+
+            </div>
+            </div>
             
-        $(".thumbnail").click(function() {
-            var gender = $(this).attr('id');
-           
-            $.ajax({
-                type: "POST",
-                url: base_url + "index.php/welcome/feed",
-                data: {
-                    'gender': gender,
-                    'language':'english'
-                },
-                success: function(msg)
-                {
-                   $("#body").html(msg); 
-
-                }
-            });
-        });
-
-    });
-</script>
-
-<section class="container" style="height: 495px;">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class='thumbnail'>
-                <h1 style='text-align: center;'>Where did you heard about Mahotsav from? </h1>
+            <div class="col-lg-12" style="text-align: center;">
+                <h1>From where did you heard about Chitwan Mahotsav?</h1>
+            </div>
+    <!--top level completed-->
+    <?php echo form_open_multipart('welcome/feed'); ?>
+            <div class="col-lg-12">
+            
+            
+            
+            
+            
+            
+            
+            
+               
+            
+        </div>
+    <div class="col-lg-12" style='text-align: center;margin: 0 auto 0 auto;'>
+            <div class="col-lg-3" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
+            
+                <input type="submit" class="btn btn-primary btn-lg" value='Continue'>
             </div>
         </div>
-        <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail btn btn-primary btn-lg' id='newspaper' style="background-color: #428bca;">
-                <h1>NEWSPAPER</h1>
-            </div>
+    <?php echo form_close(); ?>
         </div>
-        
-        <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail btn btn-primary btn-lg' id='television' style="background-color: #428bca;">
-                <h1>TELEVISION</h1>
-            </div>
-        </div>
-        
-        <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail btn btn-primary btn-lg' id='fmradio' style="background-color: #428bca;">
-                <h1>F.M. RADIO</h1>
-            </div>
-        </div>
-        
-        <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail btn btn-primary btn-lg' id='friends' style="background-color: #428bca;">
-                <h1>FRIENDS</h1>
-            </div>
-        </div>
-        
-        <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail btn btn-primary btn-lg' id='roadmic' style="background-color: #428bca;">
-                <h1>ROAD MIC.</h1>
-            </div>
-        </div>
-        
-        <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail btn btn-primary btn-lg' id='other' style="background-color: #428bca;">
-                <h1>OTHER</h1>
-            </div>
-        </div>
-        
     </div>
-    <div id="temp"></div> 
+    
+
 </section>

@@ -1,24 +1,67 @@
-#male
+
+#firstpage
 {
- background: url("../images/male.png") repeat scroll 0 0 / 80% auto rgba(0, 0, 0, 0.5);
- height: 220px;
- opacity: 0.2;
+    background: url("../images/kiosk.jpg");
+    background-size: cover;
+    //opacity: 0.2;
 }
-#female
-{
- background: url("../images/female.png") repeat scroll 0 0 / 80% auto rgba(0, 0, 0, 0.5);
- height: 220px;
- opacity: 0.2;
+#solgan-quote-wraper{text-align: center;background:url(../images/blur.jpg);padding: 0%;color: #fff;height: 565px;}
+
+#male{text-align: center;background:url(../images/male.png);padding: 0%;color: #fff;height: 320px;background-size: 50%;}
+
+#female{text-align: center;background:url(../images/female.png);padding: 0%;color: #fff;height: 320px;background-size: 50%;}
+#chitwan, #nawalparasi, #makawanpur{text-align: center;background:url(../images/female.png);padding: 0%;color: #fff;height: 320px;background-size: 50%;}
+.body{height: 565px;}
+.nextbody{height: 615px;}
+.btn-lg, .btn-group-lg > .btn {
+    border-radius: 6px;
+    font-size: 40px;
+    line-height: 1.33;
+    padding: 25px 48px;
 }
-#agegroups
-{
- background: url("../images/kiosk.jpg") repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0.5);
- height: 300px;
- opacity: 0.2;
+    .btn-lg, .btn-group-lg > .btn {
+    border-radius: 6px;
+    font-size: 40px;
+    line-height: 1.33;
+    padding: 25px 48px;
 }
-#locchit, #locnaw, #locmak
+.panel {
+        -webkit-transition-property : scale; 
+        -webkit-transition-duration : 0.2s; 
+        -webkit-transition-timing-function : ease-in-out; 
+        -moz-transition : all 0.2s ease-in-out; 
+        font-size: 30px;
+    }
+
+    .panel:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+        -moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+        background: #efefef;
+    }
+    .agegroup {
+    background-color: #fff;
+    display: block;
+    line-height: 1.42857;
+    padding: 4px;
+    transition: all 0.2s ease-in-out 0s;
+    float: left; width: 20%;
+}
+.gender
 {
- background: url("../images/kiosk.jpg") repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0.5);
- height: 170px;
- opacity: 0.2;
+    background-color: #fff;
+    display: block;
+    line-height: 1.42857;
+    padding: 4px;
+    transition: all 0.2s ease-in-out 0s;
+    float: left; width: 50%;
+}
+.district
+{
+    background-color: #fff;
+    display: block;
+    line-height: 1.42857;
+    padding: 4px;
+    transition: all 0.2s ease-in-out 0s;
+    float: left; width: 25%;
 }

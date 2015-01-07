@@ -14,19 +14,25 @@
 <link rel="stylesheet" href="<?php echo base_url().'content/font-awesome/css/font-awesome.min.css'; ?>"> 
 <script src="<?php echo base_url().'content/bootstrap/js/bootstrap.min.js'; ?>"></script>   
 <script src="<?php echo base_url() . 'content/scripts/jquery.min.js'; ?>"></script>
+<link rel="stylesheet" href="<?php echo base_url().'content/styles/range.css'; ?>">
+<script src="<?php echo base_url().'content/scripts/range.js'; ?>"></script>
  <style>
+ .btn-lg, .btn-group-lg > .btn {
+    border-radius: 6px;
+    font-size: 40px;
+    line-height: 1.33;
+    padding: 25px 48px;
+}
     .btn-lg, .btn-group-lg > .btn {
     border-radius: 6px;
     font-size: 40px;
     line-height: 1.33;
-    padding: 30px 48px;
-}
+    padding: 25px 48px;
+}   
 </style>
   </head>
-    <body id='body'>
-        <header style="height: 80px; background-color: #efefef;">
-            
-        </header>
+    <body id='allb'>
+        
         
         
         

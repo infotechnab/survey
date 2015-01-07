@@ -1,5 +1,5 @@
 
-<section class='nextbody'>
+<section class='body'>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12" style="background-color: #efffff;">
@@ -11,8 +11,8 @@
                 <div class="progress progress-striped active" style="margin-bottom: 0px;">
    <div class="progress-bar progress-bar-success" role="progressbar" 
       aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
-      style="width: 70%;">
-       <span class="sr-only" style="position: unset;">70% Complete</span>
+      style="width: 100%;">
+       <span class="sr-only" style="position: unset;">100% Complete</span>
    </div>
 </div>
             </div>
@@ -23,12 +23,12 @@
             </div>
             
             <div class="col-lg-12" style="text-align: center;">
-                <h1>How often did you visited Chitwan Mahotsav?</h1>
+                 <h1>Thank You for your time</h1>
             </div>
     <!--top level completed-->
-    <?php echo form_open_multipart('welcome/media'); ?>
+    <?php echo form_open_multipart('welcome/index'); ?>
             <div class="col-lg-12">
-            
+               
             
             
             

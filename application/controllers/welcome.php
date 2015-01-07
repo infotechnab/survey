@@ -6,132 +6,114 @@ class Welcome extends CI_Controller {
         parent::__construct();
         $this->load->helper('form');
          $this->load->helper('url');
+         $this->load->library('session');
      }
     
     public function index()
 	{
 		$this->load->view('templates/header');
+                $this->load->view('templates/headHome');
                 $this->load->view('templates/body');
                 $this->load->view('templates/footer');
 	}
         
         public function gender()
         {
-            $this->load->view('templates/header');
-            if(isset($_POST['language'])){
-                $language= $_POST['language'];
-            }else{ $language='english'; }
-           
-            if($language=='english')
+            if(isset($_POST['language']))
             {
+                $language= $_POST['language'];
+            }else{$language='nepali';}
+            $data = array('language' => $language);
+                $this->session->set_userdata($data);
+            $this->load->view('templates/header');
                 $this->load->view('templates/genderE');
-            }else{
-                $this->load->view('templates/genderN');
-            }
              $this->load->view('templates/footer');
         }
         public function ageGroup()
         {
+            $language = $this->session->userdata('language');
+            $gender = $this->input->post('gender');
+            $data = array('language' => $language, 'gender'=>$gender);
+                $this->session->set_userdata($data);
             $this->load->view('templates/header');
-            if(isset($_POST['language'])){
-                $language= $_POST['language'];
-            }else{ $language='english'; }
            
-            if($language=='english')
-            {
                 $this->load->view('templates/ageGroupE');
-            }else{
-                $this->load->view('templates/ageGroupN');
-            }
+            
             $this->load->view('templates/footer');
         }
         public function location()
         {
+            $language = $this->session->userdata('language');
+            $gender = $this->session->userdata('gender');
+            $ageGroup = $this->input->post('age');
+            $data = array('language' => $language, 'gender'=>$gender, 'age'=>$ageGroup);
+                $this->session->set_userdata($data);
                 $this->load->view('templates/header');
-               if(isset($_POST['language'])){
-                $language= $_POST['language'];
-            }else{ $language='english'; }
-           
-            if($language=='english')
-            {
+              
                 $this->load->view('templates/locationE');
-            }else{
-                $this->load->view('templates/locationN');
-            }
+            
                 $this->load->view('templates/footer');
         }
         public function profession()
         {
+            $language = $this->session->userdata('language');
+            $gender = $this->session->userdata('gender');
+            $ageGroup = $this->session->userdata('age');
+            $district = $this->input->post('district');
+
+            $data = array('language' => $language, 'gender'=>$gender, 'age'=>$ageGroup, 'district'=>$district);
+                $this->session->set_userdata($data);
                 $this->load->view('templates/header');
-                if(isset($_POST['language'])){
-                $language= $_POST['language'];
-            }else{ $language='english'; }
-           
-            if($language=='english')
-            {
+                
                 $this->load->view('templates/professionE');
-            }else{
-                $this->load->view('templates/professionN');
-            }
+            
            $this->load->view('templates/footer');
         }
         public function purpose()
         {
+            $language = $this->session->userdata('language');
+            $gender = $this->session->userdata('gender');
+            $ageGroup = $this->session->userdata('age');
+            $district = $this->session->userdata('district');
+            
+            //$profession = $this->input->post('profession');
              $this->load->view('templates/header');
-            if(isset($_POST['language'])){
-                $language= $_POST['language'];
-            }else{ $language='english'; }
-            if($language=='english')
-            {
+            
                 $this->load->view('templates/purposeE');
-            }else{
-                $this->load->view('templates/purposeN');
-            }
+            
             $this->load->view('templates/footer');
         }
         public function frequency()
         {
              $this->load->view('templates/header');
-            if(isset($_POST['language'])){
-                $language= $_POST['language'];
-            }
-           
-            if($language=='english')
-            {
+            
                 $this->load->view('templates/frequencyE');
-            }else{
-                $this->load->view('templates/frequencyN');
-            }
+            
             $this->load->view('templates/footer');
         }
         public function media()
         {
              $this->load->view('templates/header');
-            if(isset($_POST['language'])){
-                $language= $_POST['language'];
-            }
            
-            if($language=='english')
-            {
                 $this->load->view('templates/mediaE');
-            }else{
-                $this->load->view('templates/mediaN');
-            }
+           
             $this->load->view('templates/footer');
         }
         public function feed()
         {
             $this->load->view('templates/header');
-            if(isset($_POST['language'])){
-                $language= $_POST['language'];
-            }
            
-            if($language=='english')
-            {
                 $this->load->view('templates/overallFeed');
-            }else{
-                $this->load->view('templates/overallFeed');
-            }
+           
+            $this->load->view('templates/footer');
+        }
+        
+        public function thankYou()
+        {
+            $this->load->view('templates/header');
+            $this->load->view('templates/headHome');
+                $this->load->view('templates/thankYou');
+           
             $this->load->view('templates/footer');
         }
         
