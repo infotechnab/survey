@@ -1,44 +1,43 @@
 <script type="text/javascript">
     $(document).ready( function() {
-        $("div.panel").on("click",function(event) {
-    var target = $(event.target);
-    if (target.is('input:radio')) return;
-    
-    var radio = $(this).find("input[type='radio']");
-    
-     if( !radio.prop("checked") ){
-        radio.prop("checked",true);
-         $(this).css({'background-color':'#cccc2c'});
-        // $(this).('div').css({'background-color':'#fff'});
-    } else {
-        radio.prop("checked",false);
-         $(this).css({'background-color':'#fff'});
-    }
-    if( !radio.prop("checked") ){
-        $(this).css({'background-color':'#fff'});
-    } 
+       $('div.panel').click(function() {
+		$(this).find('input:radio').prop('checked', true);
+			$('div.panel').removeClass('checked11').addClass('jabat');
+			$('div.panel').removeClass('checked11').addClass('jabit');
+		if ($(this).hasClass("jabat")) {
+			$(this).closest('div').removeClass('jabat').addClass('checked11');
+		}
+		if ($(this).hasClass("jabit")) {
+			$(this).closest('div').removeClass('jabit').addClass('checked11');
+		}
 });
     });
 </script>
+<style>
+    .checked11
+    {
+        background: #cccc2c;
+    }
+</style>
 <section class='nextbody'>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12" style="background-color: #efffff;">
-            <div class="col-lg-4">
+                <div class="col-lg-4" style="padding-top:5px;">
                 <a href='#'><i class="fa fa-chevron-circle-left" style="font-size: 35px;"> Back </i></a>
 
             </div>
-            <div class="col-lg-4" style="text-align: center;padding-top: 7px;">
-                <div class="progress progress-striped active" style="margin-bottom: 0px;">
+            <div class="col-lg-4" style="text-align: center;padding-top: 10px;">
+                <div class="progress progress-striped active" style="margin-bottom: 0px;height: 30px;">
    <div class="progress-bar progress-bar-success" role="progressbar" 
       aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
-      style="width: 30%;">
+      style="width: 30%;padding-top: 5px;">
        <span class="sr-only" style="position: unset;">30% Complete</span>
    </div>
 </div>
             </div>
             <div class="col-lg-4" style="text-align: right;">
-                <a href='#'><i class="fa fa-chevron-circle-right" style="font-size: 35px;"> Skip </i></a>
+               <a href='<?php echo base_url(); ?>' style="font-size: 35px;text-decoration: none;">Close <i class="fa fa-times-circle" style="font-size: 35px;"></i></a>
 
             </div>
             </div>

@@ -5,7 +5,7 @@
     background-size: cover;
     //opacity: 0.2;
 }
-#solgan-quote-wraper{text-align: center;background:url(../images/blur.jpg);padding: 0%;color: #fff;height: 878px;background-size: 100%;}
+#solgan-quote-wraper{text-align: center;background:url(../images/blur.jpg);padding: 0%;color: #fff;height: 885px;background-size: 100%;}
 
 #male{text-align: center;background:url(../images/male.png);padding: 0%;color: #fff;height: 745px;background-size: 95%;}
 
@@ -67,5 +67,5 @@
 }
 #innerbody
 {
-    height: 820px;
+    height: 805px;
 }
