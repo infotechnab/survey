@@ -27,7 +27,7 @@
             </div>
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/media'); ?>
-            <div class="col-lg-12">
+            <div class="col-lg-12" id="innerbody">
             
             
             

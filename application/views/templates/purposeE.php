@@ -15,6 +15,13 @@ $("div.btn").on("click",function(event) {
     }
 });
 
+var checkedAtLeastOne = false;
+$('input[type="checkbox"]').each(function() {
+    if ($(this).is(":checked")) {
+        checkedAtLeastOne = true;
+    }
+});
+
     });
     
 </script>
@@ -23,12 +30,12 @@ $("div.btn").on("click",function(event) {
   label {
 	position: relative;
 	padding-left: 30px;
-	font-size: 40px;
+	font-size: 45px;
 	cursor: pointer;
 }
 label:before, label:after {
 	font-family: FontAwesome;
-	font-size: 35px;
+	font-size: 40px;
 	/*absolutely positioned*/
 	position: absolute; top: 4px; left: 0;
 }
@@ -47,16 +54,17 @@ label:after {
 
 /*hiding the original checkboxes*/
 input[type="checkbox"] {
-	display: none;
+	
+    display: none;
 }
 /*when the user checks the checkbox the checked icon will animate in*/
 input[type="checkbox"]:checked + label:after {
-	max-width: 50px; /*an arbitratry number more than the icon's width*/
+	max-width: 70px; /*an arbitratry number more than the icon's width*/
 	opacity: 1; /*for fade in effect*/
 }  
     
 #purpose {
-    padding: 40px 25px;
+    padding: 142px 25px;
 } 
 .thumbnail
 {
@@ -98,13 +106,13 @@ input[type="checkbox"]:checked + label:after {
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/frequency'); ?>
                        
-            <div class='col-lg-12'>
+            <div class='col-lg-12' id="innerbody">
              
                 
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-  <input id="option" type='checkbox' name='student' value='student'>
+  <input id="option" type='checkbox' name='other' value='student'>
   <label for="student">&nbsp;Agriculture </label>
 </div>      
             </div>
@@ -113,7 +121,7 @@ input[type="checkbox"]:checked + label:after {
           <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-  <input id="option" type='checkbox' name='it' value='student'>
+  <input id="option" type='checkbox' name='other' value='student'>
   <label for="it">&nbsp;IT </label>
 </div>      
             </div>
@@ -122,7 +130,7 @@ input[type="checkbox"]:checked + label:after {
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-  <input id="option" type='checkbox' name='entertainment' value='student'>
+  <input id="option" type='checkbox' name='other' value='student'>
   <label for="entertainment">&nbsp;Entertainment </label>
 </div>      
             </div>
@@ -131,7 +139,7 @@ input[type="checkbox"]:checked + label:after {
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-  <input id="option" type='checkbox' name='dairy' value='student'>
+  <input id="option" type='checkbox' name='other' value='student'>
   <label for="dairy">&nbsp;Dairy </label>
 </div>      
             </div>
@@ -140,7 +148,7 @@ input[type="checkbox"]:checked + label:after {
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-  <input id="option" type='checkbox' name='purchase' value='student'>
+  <input id="option" type='checkbox' name='other' value='student'>
   <label for="purchase">&nbsp;Purchase </label>
 </div>      
             </div>

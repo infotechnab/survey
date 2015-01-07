@@ -48,7 +48,7 @@
             </div>
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/location'); ?>
-            <div class="col-lg-12">
+            <div class="col-lg-12" id="innerbody">
             <div class='agegroup'>
                     <div class="panel panel-default text-center">
                      
@@ -62,7 +62,7 @@
                     <div class="panel panel-default text-center">
                      
                  <div id="male"></div>   
-         <input type="radio" name='age' value='0-14' required> 0-14 years
+         <input type="radio" name='age' value='15-24' required> 15-24 years
                 </div>
                 
             </div>
@@ -71,7 +71,7 @@
                     <div class="panel panel-default text-center">
                      
                  <div id="male"></div>   
-         <input type="radio" name='age' value='0-14' required> 0-14 years
+         <input type="radio" name='age' value='25-54' required> 25-54 years
                 </div>
                 
             </div>
@@ -80,7 +80,7 @@
                     <div class="panel panel-default text-center">
                      
                  <div id="male"></div>   
-         <input type="radio" name='age' value='0-14' required> 0-14 years
+         <input type="radio" name='age' value='55-64' required> 55-64 years
                 </div>
                 
             </div>
@@ -89,7 +89,7 @@
                      <div class="panel panel-default text-center">
                      
                  <div id="male"></div>   
-         <input type="radio" name='age' value='0-14' required> 0-14 years
+         <input type="radio" name='age' value='65above' required> 65+ years
                 </div>
                 
             </div>   

@@ -1,31 +1,85 @@
-<script type="text/javascript">
-    $(document).ready(function() {
-   
-    $('.single-slider').jRange({
-    from: 0,
-    to: 5,
-    step: 1,
-    scale: [0,1,2,3,4,5],
-    format: '%s',
-    width: 1000,
-    showLabels: true
+<link rel="stylesheet" href="<?php echo base_url().'content/styles/jquery-ui.css'; ?>">
+<script src="<?php echo base_url().'content/scripts/jquery-ui.js'; ?>"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script>
+$(function() {
+$( "#slider" ).slider({
+value:0,
+min: 0,
+max: 5,
+step: 1,
+slide: function( event, ui ) {
+$( "#sachibalaya" ).val( "" + ui.value );
+}
+});
+$( "#sachibalaya" ).val( "" + $( "#slider" ).slider( "value" ) );
 });
 
- });
-</script>
 
+$(function() {
+$( "#slider1" ).slider({
+value:0,
+min: 0,
+max: 5,
+step: 1,
+slide: function( event, ui ) {
+$( "#water" ).val( "" + ui.value );
+}
+});
+$( "#water" ).val( "" + $( "#slider1" ).slider( "value" ) );
+});
+
+$(function() {
+$( "#slider2" ).slider({
+value:0,
+min: 0,
+max: 5,
+step: 1,
+slide: function( event, ui ) {
+$( "#toilet" ).val( "" + ui.value );
+}
+});
+$( "#toilet" ).val( "" + $( "#slider2" ).slider( "value" ) );
+});
+
+$(function() {
+$( "#slider3" ).slider({
+value:0,
+min: 0,
+max: 5,
+step: 1,
+slide: function( event, ui ) {
+$( "#communication" ).val( "" + ui.value );
+}
+});
+$( "#communication" ).val( "" + $( "#slider3" ).slider( "value" ) );
+});
+
+$(function() {
+$( "#slider4" ).slider({
+value:0,
+min: 0,
+max: 5,
+step: 1,
+slide: function( event, ui ) {
+$( "#security" ).val( "" + ui.value );
+}
+});
+$( "#security" ).val( "" + $( "#slider4" ).slider( "value" ) );
+});
+</script>
 <style>
     .option
     {
-       padding: 7px 15px; 
+       padding: 60px 15px; 
     }
     .value
     {
-        padding: 7px 15px;
+        padding: 60px 15px;
     }
     .optionval
     {
-        padding: 7px 15px; font-size: 30px;
+        padding: 60px 15px; font-size: 30px;
     }
 </style>
 <section class='nextbody'>
@@ -56,53 +110,89 @@
             </div>
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/thankYou'); ?>
-            <div class="col-lg-12">
-            
+            <div class="col-lg-12" style="height: 710px;">
+
+      
                 <table>
-                    <tr>
+                    <tr style="padding: 20px 0px 20px 0px;">
                         <td class='option'>
-                            <h2>Sachibalaya</h2>
+                            <label for="sachibalaya">Sachibalaya</label>
                         </td>
-                        <td class='optionval'><span>5</span></td>
+                        <td class='optionval'> <input type="text" id="sachibalaya" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
                         <td class='value'>
-                             <div class='single-slider' value='5'></div>
+                            <span id="number" style="position:absolute;top: -14px;left: 40.5%;">0</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 48.5%;">1</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 56.5%;">2</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 64.5%;">3</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 72.5%;">4</span> 
+                            <span id="number" style="position:absolute;top: -14px;left: 80.5%;">5</span> 
+                            <div id="slider"></div>
+                        </td>
+                    </tr>
+                    <tr style="padding: 20px 0px 20px 0px;">
+                        <td class='option'>
+                            <label for="water">Water Supply</label>
+                        </td>
+                        <td class='optionval'><input type="text" id="water" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
+                        <td class='value'>
+                            <span id="number" style="position:absolute;top: 50px;left: 40.5%;">0</span>
+                            <span id="number" style="position:absolute;top: 50px;left: 48.5%;">1</span>
+                            <span id="number" style="position:absolute;top: 50px;left: 56.5%;">2</span>
+                            <span id="number" style="position:absolute;top: 50px;left: 64.5%;">3</span>
+                            <span id="number" style="position:absolute;top: 50px;left: 72.5%;">4</span> 
+                            <span id="number" style="position:absolute;top: 50px;left: 80.5%;">5</span>
+                            <div id="slider1"></div>
+                        </td>
+                    </tr>
+                    <tr style="padding: 20px 0px 20px 0px;">
+                        <td class='option'>
+                            <label for="toilet">Toilet</label>
+                        </td>
+                        <td class='optionval'><input type="text" id="toilet" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
+                        <td class='value'>
+                            <span id="number" style="position:absolute;top: -14px;left: 40.5%;">0</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 48.5%;">1</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 56.5%;">2</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 64.5%;">3</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 72.5%;">4</span> 
+                            <span id="number" style="position:absolute;top: -14px;left: 80.5%;">5</span>
+                             <div id="slider2"></div>
+                        </td>
+                    </tr>
+                    <tr style="padding: 20px 0px 20px 0px;">
+                        <td class='option'>
+                            <label for="communication">Communication</label>
+                        </td>
+                        <td class='optionval'><input type="text" id="communication" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
+                        <td class='value'>
+                            <span id="number" style="position:absolute;top: -14px;left: 40.5%;">0</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 48.5%;">1</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 56.5%;">2</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 64.5%;">3</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 72.5%;">4</span> 
+                            <span id="number" style="position:absolute;top: -14px;left: 80.5%;">5</span>
+                             <div id="slider3"></div>
+                        </td>
+                    </tr>
+                    <tr style="padding: 20px 0px 20px 0px;">
+                        <td class='option'>
+                           <label for="security">Security</label>
+                        </td>
+                        <td class='optionval'><input type="text" id="security" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
+                        <td class='value'>
+                            <span id="number" style="position:absolute;top: -14px;left: 40.5%;">0</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 48.5%;">1</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 56.5%;">2</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 64.5%;">3</span>
+                            <span id="number" style="position:absolute;top: -14px;left: 72.5%;">4</span> 
+                            <span id="number" style="position:absolute;top: -14px;left: 80.5%;">5</span>
+                             <div id="slider4"></div>
                         </td>
                     </tr>
                     <tr>
-                        <td class='option'>
-                            <h2>Water Supply</h2>
-                        </td>
-                        <td class='optionval'><span>3</span></td>
-                        <td class='value'>
-                             <div class='single-slider'></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class='option'>
-                            <h2>Toilet</h2>
-                        </td>
-                        <td class='optionval'><span>4</span></td>
-                        <td class='value'>
-                             <div class='single-slider'></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class='option'>
-                            <h2>Communication</h2>
-                        </td>
-                        <td class='optionval'><span>3</span></td>
-                        <td class='value'>
-                             <div class='single-slider'></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class='option'>
-                            <h2>Security</h2>
-                        </td>
-                        <td class='optionval'><span>2</span></td>
-                        <td class='value'>
-                             <div class='single-slider'></div>
-                        </td>
+                        <td class='option'></td>
+                        <td class='optionval'></td>
+                        <td class='value'><input type="text" id="security" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
                     </tr>
                 </table>
         

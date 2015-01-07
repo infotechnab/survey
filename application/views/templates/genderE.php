@@ -57,7 +57,7 @@ $("div.panel").on("click",function(event) {
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/ageGroup'); ?>
                        
-            <div class='col-lg-12'>
+            <div class='col-lg-12' id="innerbody">
              
                 <div class='gender'>
                 <div class="panel panel-default text-center">

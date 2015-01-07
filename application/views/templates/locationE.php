@@ -12,10 +12,10 @@ $("div.panel").on("click",function(event) {
         // $(this).('div').css({'background-color':'#fff'});
     } else {
         radio.prop("checked",false);
-         $(this).css({'background-color':'#fff'});
+         $(this).css({'background-color':'#42cc2c'});
     }
     if( !radio.prop("checked") ){
-        $(this).css({'background-color':'#fff'});
+        $(this).css({'background-color':'#42cc2c'});
     } 
 });
 
@@ -57,7 +57,7 @@ $("div.panel").on("click",function(event) {
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/profession'); ?>
                        
-            <div class='col-lg-12'>
+            <div class='col-lg-12' id="innerbody">
              
                 <div class='district'>
                 <div class="panel panel-default text-center">
@@ -84,10 +84,14 @@ $("div.panel").on("click",function(event) {
                 </div>
        
                 <div class='district'>
-                <div class="panel panel-default text-center" id='district'>
-                     
-                 <div id="nawalparasi"></div>   
-                 <input type="radio" name='district' value='nawalparasi' required> Nawalparasi
+                <div class="panel thumbnail btn btn-info btn-lg" id='district' style="padding-top:135px;padding-bottom:135px;">
+                              
+                 <input type="radio" name='district' value='nepal' class="" required> Nepal
+                
+                </div>
+                    <div class="panel thumbnail btn btn-info btn-lg" id='district' style="padding-top:135px;padding-bottom:135px;">
+
+                 <input type="radio" name='district' value='foreign' class="" required> Other
                 </div>
                 </div>
 

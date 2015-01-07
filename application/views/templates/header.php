@@ -28,7 +28,15 @@
     font-size: 40px;
     line-height: 1.33;
     padding: 25px 48px;
-}   
+}  
+.thumbnail
+{
+   background-color:#42cc2c; 
+}
+.thumbnail:hover, .thumbnail:active, .thumbnail:visited
+{
+    background-color: #cccc2c;
+}
 </style>
   </head>
     <body id='allb'>

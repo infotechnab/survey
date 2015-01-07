@@ -27,8 +27,41 @@
             </div>
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/feed'); ?>
-            <div class="col-lg-12">
-            
+            <div class="col-lg-12" id="innerbody">
+                <table>
+                    <tr>
+                        <td><input id="option" type='checkbox' name='other' value='student'></td>
+                        <td>Newspaper and Magazine</td>
+                    </tr>
+                    <tr>
+                        <td><input id="option" type='checkbox' name='other' value='student'></td>
+                        <td>Television</td>
+                    </tr>
+                    <tr>
+                        <td><input id="option" type='checkbox' name='other' value='student'></td>
+                        <td>F.M. Radio</td>
+                    </tr>
+                    <tr>
+                        <td><input id="option" type='checkbox' name='other' value='student'></td>
+                        <td>Road Miking </td>
+                    </tr>
+                    <tr>
+                        <td><input id="option" type='checkbox' name='other' value='student'></td>
+                        <td>Social Media</td>
+                    </tr>
+                    <tr>
+                        <td><input id="option" type='checkbox' name='other' value='student'></td>
+                        <td>Friends/ Family/ Society</td>
+                    </tr>
+                    <tr>
+                        <td><input id="option" type='checkbox' name='other' value='student'></td>
+                        <td>Banner and Phamplets</td>
+                    </tr>
+                    <tr>
+                        <td><input id="option" type='checkbox' name='other' value='student'></td>
+                        <td>Other</td>
+                    </tr>
+                </table>
             
             
             

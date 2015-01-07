@@ -28,7 +28,7 @@
 <section class='body'>
     
     <div id="solgan-quote-wraper">
-        <div  style=" background:rgba(0, 0, 0, 0.4); height: 565px;">
+        <div  style=" background:rgba(0, 0, 0, 0.4); height: 885px;">
             <h1 style="margin: 0px;padding-top: 40px;">You are here to contribute Chitwan Mahotsav with your data.</h1>
         <p>Please Select the Language..............</P>
         <p lang="ne">भाषा छनोट गर्नुहोस्.................</p>

@@ -27,12 +27,14 @@
             </div>
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/index'); ?>
-            <div class="col-lg-12">
+            <div class="col-lg-12" style="height: 710px;">
                
             
             
-            
-            
+           
+
+
+
             
             
             
