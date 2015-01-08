@@ -28,12 +28,12 @@
 <section class='body'>
     
     <div id="solgan-quote-wraper">
-        <div  style=" background:rgba(0, 0, 0, 0.4); height: 885px;">
-            <h1 style="margin: 0px;padding-top: 40px;">You are here to contribute Chitwan Mahotsav with your data.</h1>
+        <div  style=" background:rgba(0, 0, 0, 0.4); height:1075px;">
+            <h1 style="margin-top: 0px;padding-top: 40px;">You are here to contribute Chitwan Mahotsav with your data.</h1>
         <p>Please Select the Language..............</P>
         <p lang="ne">भाषा छनोट गर्नुहोस्.................</p>
         
-        <img src="<?php echo base_url().'content/images/favicon.jpg' ?>" style="width:220px; text-align: center;margin: 0 auto 0 auto;" class="img-responsive" alt=""/>
+        
         
         <button type="button" id="english" class="btn btn-primary btn-lg">ENTER &#9654;</button>
         

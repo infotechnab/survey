@@ -14,7 +14,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('templates/header');
                 $this->load->view('templates/headHome');
                 $this->load->view('templates/body');
-                $this->load->view('templates/footer');
+                //$this->load->view('templates/footer');
 	}
         
         public function gender()

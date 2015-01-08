@@ -1,4 +1,61 @@
+<script type="text/javascript">
+$(document).ready( function() {
+       $('div.circled-outer-image-programs').click(function() {
+         
+		$(this).find('input:radio').prop('checked', true);
+			$('div.circled-outer-image-programs').removeClass('checked11').addClass('jabat');
+			$('div.circled-outer-image-programs').removeClass('checked11').addClass('jabit');
+		if ($(this).hasClass("jabat")) {
+			$(this).closest('div').removeClass('jabat').addClass('checked11');
+		}
+		if ($(this).hasClass("jabit")) {
+			$(this).closest('div').removeClass('jabit').addClass('checked11');
+		}
+});
+    });
+</script>
+<style>
+     .checked11
+    {
+        background: #cccc2c;
+    }
+    label {
+	position: absolute;
+	padding-left: 30px;
+	font-size: 45px;
+	cursor: pointer;
+        top: 135px;
+}
+label:before, label:after {
+	font-family: FontAwesome;
+	font-size: 40px;
+	/*absolutely positioned*/
+	position: absolute; top: 0px; left: 0;
+}
+label:before {
+	content: "\f10c";
+}
+label:after {
+	content: "\f111"; /* circle */
+	/*checked icon will be hidden by default by using 0 max-width and overflow hidden*/
+	max-width: 0;
+	overflow: hidden;
+	opacity: 0.5;
+	/*CSS3 transitions for animated effect*/
+	transition: all 0.35s;
+}
 
+/*hiding the original checkboxes*/
+input[type="radio"] {
+	
+    display: none;
+}
+/*when the user checks the checkbox the checked icon will animate in*/
+input[type="radio"]:checked + label:after {
+	max-width: 70px; /*an arbitratry number more than the icon's width*/
+	opacity: 1; /*for fade in effect*/
+}  
+</style>
 <section class='nextbody'>
     <div class="container-fluid">
         <div class="row">
@@ -29,8 +86,30 @@
     <?php echo form_open_multipart('welcome/media'); ?>
             <div class="col-lg-12" id="innerbody">
             
-            
-            
+                <div class="col-lg-6">
+            <div class="img-circle circled-outer-image-programs" id="" style="background-color:#42cc2c;">
+                  <input id="option" type='radio' name='other' value='business' required>
+                  <label for="it" style="text-align:center;">&nbsp;New Commer </label> 
+            </div></div>
+                
+                <div class="col-lg-6">
+            <div class="img-circle circled-outer-image-programs" id="" style="background-color:#42cc2c;">
+                     <input id="option" type='radio' name='other' value='business' required>
+  <label for="it" style="text-align:center;">&nbsp;One Time </label> 
+            </div></div>
+                
+                <div class="col-lg-6">
+            <div class="img-circle circled-outer-image-programs" id="" style="background-color:#42cc2c;">
+                   <input id="option" type='radio' name='other' value='business' required>
+  <label for="it">&nbsp;Two Times</label>   
+            </div></div>
+                
+                <div class="col-lg-6">
+            <div class="img-circle circled-outer-image-programs" id="" style="background-color:#42cc2c;">
+                   <input id="option" type='radio' name='other' value='business' required>
+                   <label for="it">&nbsp;Frequently <br/>&nbsp;&nbsp;Visited </label>  
+            </div></div>
+                 
             
             
             

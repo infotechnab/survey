@@ -1,3 +1,3 @@
-<header style="height: 50px; background-color: #efefef;">
+<header style="height: 0px; background-color: #efefef;">
             
         </header>

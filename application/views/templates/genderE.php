@@ -1,7 +1,7 @@
+<script src="<?php echo base_url() . 'content/scripts/jquery.min.js'; ?>"></script>
 <script type="text/javascript">
     $(document).ready( function() {
-        
-      $('div.panel').click(function() {
+     $('div.panel').click(function() {
 		$(this).find('input:radio').prop('checked', true);
 			$('div.panel').removeClass('checked11').addClass('jabat');
 			$('div.panel').removeClass('checked11').addClass('jabit');
@@ -11,7 +11,7 @@
 		if ($(this).hasClass("jabit")) {
 			$(this).closest('div').removeClass('jabit').addClass('checked11');
 		}
-});  
+});
         
     });
 </script>
