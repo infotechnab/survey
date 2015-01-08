@@ -6,13 +6,17 @@
     background-size: cover;
     //opacity: 0.2;
 }
-#solgan-quote-wraper{text-align: center;background:url(../images/homeScreen.jpg);padding: 0%;color: #fff;height: 1075px;background-size: 100%;}
+#solgan-quote-wraper{text-align: center;background:url(../images/homeScreen.jpg) no-repeat;padding: 0%;color: #fff;height: 1075px;background-size: 100%;}
 
-#male{text-align: center;background:url(../images/male.png);padding: 0%;color: #fff;height: 745px;background-size: 95%;}
-
-#female{text-align: center;background:url(../images/female.png);padding: 0%;color: #fff;height: 745px;background-size: 95%;}
-#chitwan, #nawalparasi, #makawanpur{text-align: center;background:url(../images/female.png);padding: 0%;color: #fff;height: 635px;background-size: 50%;}
-.body{height: 985px;}
+#male{text-align: center;background:url(../images/male.png)no-repeat;padding: 0%;color: #fff;height: 745px;background-size: 95%;}
+#cover-home
+{
+    background:rgba(0, 0, 0, 0.4);
+    height: 1075px;
+}
+#female{text-align: center;background:url(../images/female.png)no-repeat;padding: 0%;color: #fff;height: 745px;background-size: 95%;}
+#chitwan, #nawalparasi, #makawanpur{text-align: center;background:url(../images/female.png)no-repeat;padding: 0%;color: #fff;height: 635px;background-size: 50%;}
+.body{height: 100%;}
 .nextbody{height: 1035px;}
 .btn-lg, .btn-group-lg > .btn {
     border-radius: 6px;

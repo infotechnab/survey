@@ -28,19 +28,19 @@
 <section class='body'>
     
     <div id="solgan-quote-wraper">
-        <div  style=" background:rgba(0, 0, 0, 0.4); height:1075px;">
+        <div id="cover-home">
             <h1 style="margin-top: 0px;padding-top: 40px;">You are here to contribute Chitwan Mahotsav with your data.</h1>
-        <p>Please Select the Language..............</P>
-        <p lang="ne">भाषा छनोट गर्नुहोस्.................</p>
+       
         
         
+        <div class="col-lg-12" style="padding-top:700px;">
+             <p>Please Select the Language</P>
+        <p lang="ne">भाषा छनोट गर्नुहोस्</p>
+            <button type="button" id="english" class="btn btn-primary btn-lg">ENTER &#9654;<br/><span style="font-size: 14px;">For English Language</span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         
-        <button type="button" id="english" class="btn btn-primary btn-lg">ENTER &#9654;</button>
+            <button type="button" id="nepali" class="btn btn-primary btn-lg">सुरु गर्नुहोस् &#9654;<br/><span style="font-size: 14px;">नेपाली भाषाकोलागि</span></button>
         
-        <button type="button" id="nepali" class="btn btn-primary btn-lg">सुरु गर्नुहोस् &#9654;</button>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For English Language &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       नेपाली भाषाकोलागि</p>
-        
+        </div>
         </div>
     </div>
 

@@ -117,10 +117,10 @@ input.ui-button::-moz-focus-inner,button.ui-button::-moz-focus-inner {border: 0;
 .ui-selectmenu-button span.ui-icon {right: 0.5em;left: auto;margin-top: -8px;position: absolute;top: 50%;}
 .ui-selectmenu-button span.ui-selectmenu-text {text-align: left;padding: 0.4em 2.1em 0.4em 1em;display: block;line-height: 1.4;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .ui-slider {position: relative;text-align: left;}
-.ui-slider .ui-slider-handle {position: absolute;z-index: 2;width: 2.2em;height: 2.2em;cursor: default;-ms-touch-action: none;touch-action: none;}
+.ui-slider .ui-slider-handle {position: absolute;z-index: 2;width: 3.5em;height: 3.5em;cursor: default;-ms-touch-action: none;touch-action: none;}
 .ui-slider .ui-slider-range {position: absolute;z-index: 1;font-size: .7em;display: block;border: 0;background-position: 0 0;}
 .ui-slider.ui-state-disabled .ui-slider-handle,.ui-slider.ui-state-disabled .ui-slider-range {filter: inherit;}
-.ui-slider-horizontal {height: 1.2em;}
+.ui-slider-horizontal {height: 2em;}
 .ui-slider-horizontal .ui-slider-handle {top: -.6em;margin-left: -.6em;}
 .ui-slider-horizontal .ui-slider-range {top: 0;height: 100%;}
 .ui-slider-horizontal .ui-slider-range-min {left: 0;}
@@ -151,7 +151,7 @@ body .ui-tooltip {border-width: 2px;}
 .ui-widget {font-family: Verdana,Arial,sans-serif;font-size: 1.1em;}
 .ui-widget .ui-widget {font-size: 1em;}
 .ui-widget input,.ui-widget select,.ui-widget textarea,.ui-widget button {font-family: Verdana,Arial,sans-serif;font-size: 1em;}
-.ui-widget-content {border: 1px solid red;background: #ffffff; width:540px;}
+.ui-widget-content {border: 1px solid red;background: #ffffff; width:585px;}
 .ui-widget-content a {color: #222222;}
 .ui-widget-header {border: 1px solid #aaaaaa;background: #cccccc url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;color: #222222;font-weight: bold;}
 .ui-widget-header a {color: #222222;}

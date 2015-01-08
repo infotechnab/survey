@@ -120,12 +120,12 @@ $( "#security" ).val( "" + $( "#slider4" ).slider( "value" ) );
                         </td>
                         <td class='optionval'> <input type="text" id="sachibalaya" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
                         <td class='value'>
-                            <span id="number" style="position:absolute;top: -14px;left: 40.5%;">0</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 48.5%;">1</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 56.5%;">2</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 64.5%;">3</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 72.5%;">4</span> 
-                            <span id="number" style="position:absolute;top: -14px;left: 80.5%;">5</span> 
+                            <span id="number" style="position:absolute;top: 25px;left: 29%;">0</span>
+                            <span id="number" style="position:absolute;top: 25px;left: 35%;">1</span>
+                            <span id="number" style="position:absolute;top: 25px;left: 41%;">2</span>
+                            <span id="number" style="position:absolute;top: 25px;left: 47%;">3</span>
+                            <span id="number" style="position:absolute;top: 25px;left: 53%;">4</span> 
+                            <span id="number" style="position:absolute;top: 25px;left: 59%;">5</span> 
                             <div id="slider"></div>
                         </td>
                     </tr>
@@ -135,12 +135,12 @@ $( "#security" ).val( "" + $( "#slider4" ).slider( "value" ) );
                         </td>
                         <td class='optionval'><input type="text" id="water" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
                         <td class='value'>
-                            <span id="number" style="position:absolute;top: 50px;left: 40.5%;">0</span>
-                            <span id="number" style="position:absolute;top: 50px;left: 48.5%;">1</span>
-                            <span id="number" style="position:absolute;top: 50px;left: 56.5%;">2</span>
-                            <span id="number" style="position:absolute;top: 50px;left: 64.5%;">3</span>
-                            <span id="number" style="position:absolute;top: 50px;left: 72.5%;">4</span> 
-                            <span id="number" style="position:absolute;top: 50px;left: 80.5%;">5</span>
+                            <span id="number" style="position:absolute;top: 190px;left: 29%;">0</span>
+                            <span id="number" style="position:absolute;top: 190px;left: 35%;">1</span>
+                            <span id="number" style="position:absolute;top: 190px;left: 41%;">2</span>
+                            <span id="number" style="position:absolute;top: 190px;left: 47%;">3</span>
+                            <span id="number" style="position:absolute;top: 190px;left: 53%;">4</span> 
+                            <span id="number" style="position:absolute;top: 190px;left: 59%;">5</span>
                             <div id="slider1"></div>
                         </td>
                     </tr>
@@ -150,12 +150,12 @@ $( "#security" ).val( "" + $( "#slider4" ).slider( "value" ) );
                         </td>
                         <td class='optionval'><input type="text" id="toilet" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
                         <td class='value'>
-                            <span id="number" style="position:absolute;top: -14px;left: 40.5%;">0</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 48.5%;">1</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 56.5%;">2</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 64.5%;">3</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 72.5%;">4</span> 
-                            <span id="number" style="position:absolute;top: -14px;left: 80.5%;">5</span>
+                            <span id="number" style="position:absolute;top: 355px;left: 29%;">0</span>
+                            <span id="number" style="position:absolute;top: 355px;left: 35%;">1</span>
+                            <span id="number" style="position:absolute;top: 355px;left: 41%;">2</span>
+                            <span id="number" style="position:absolute;top: 355px;left: 47%;">3</span>
+                            <span id="number" style="position:absolute;top: 355px;left: 53%;">4</span> 
+                            <span id="number" style="position:absolute;top: 355px;left: 59%;">5</span>
                              <div id="slider2"></div>
                         </td>
                     </tr>
@@ -165,12 +165,12 @@ $( "#security" ).val( "" + $( "#slider4" ).slider( "value" ) );
                         </td>
                         <td class='optionval'><input type="text" id="communication" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
                         <td class='value'>
-                            <span id="number" style="position:absolute;top: -14px;left: 40.5%;">0</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 48.5%;">1</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 56.5%;">2</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 64.5%;">3</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 72.5%;">4</span> 
-                            <span id="number" style="position:absolute;top: -14px;left: 80.5%;">5</span>
+                            <span id="number" style="position:absolute;top: 520px;left: 29%;">0</span>
+                            <span id="number" style="position:absolute;top: 520px;left: 35%;">1</span>
+                            <span id="number" style="position:absolute;top: 520px;left: 41%;">2</span>
+                            <span id="number" style="position:absolute;top: 520px;left: 47%;">3</span>
+                            <span id="number" style="position:absolute;top: 520px;left: 53%;">4</span> 
+                            <span id="number" style="position:absolute;top: 520px;left: 59%;">5</span>
                              <div id="slider3"></div>
                         </td>
                     </tr>
@@ -180,12 +180,12 @@ $( "#security" ).val( "" + $( "#slider4" ).slider( "value" ) );
                         </td>
                         <td class='optionval'><input type="text" id="security" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
                         <td class='value'>
-                            <span id="number" style="position:absolute;top: -14px;left: 40.5%;">0</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 48.5%;">1</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 56.5%;">2</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 64.5%;">3</span>
-                            <span id="number" style="position:absolute;top: -14px;left: 72.5%;">4</span> 
-                            <span id="number" style="position:absolute;top: -14px;left: 80.5%;">5</span>
+                            <span id="number" style="position:absolute;top: 685px;left: 29%;">0</span>
+                            <span id="number" style="position:absolute;top: 685px;left: 35%;">1</span>
+                            <span id="number" style="position:absolute;top: 685px;left: 41%;">2</span>
+                            <span id="number" style="position:absolute;top: 685px;left: 47%;">3</span>
+                            <span id="number" style="position:absolute;top: 685px;left: 53%;">4</span> 
+                            <span id="number" style="position:absolute;top: 685px;left: 59%;">5</span>
                              <div id="slider4"></div>
                         </td>
                     </tr>

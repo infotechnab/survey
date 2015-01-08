@@ -20,11 +20,12 @@ $(document).ready( function() {
         background: #cccc2c;
     }
     label {
-	position: absolute;
+	position: relative;
 	padding-left: 30px;
 	font-size: 45px;
 	cursor: pointer;
         top: 135px;
+        left: 5%;
 }
 label:before, label:after {
 	font-family: FontAwesome;
