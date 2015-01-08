@@ -16,7 +16,7 @@ $(document).ready( function() {
 $('#test').submit(function(){
     if(!$('#test input[type="radio"]').is(':checked')){
         $('.alert-message').css({'display':'block'});
-        var msg="<strong>Error !</strong> Please select your age group.";
+        var msg="<strong>Error !</strong> Please select any one.";
       $('#errmsg').html(msg);
       return false;
     }

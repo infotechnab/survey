@@ -4,6 +4,7 @@
 <script>
 $(function() {
 $( "#slider" ).slider({
+   // $('.alert-message').css({'display':'none'});
 value:0,
 min: 0,
 max: 5,

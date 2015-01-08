@@ -16,12 +16,6 @@
 <script src="<?php echo base_url() . 'content/scripts/jquery.min.js'; ?>"></script>
 <link rel="stylesheet" href="<?php echo base_url().'content/styles/range.css'; ?>">
 <script language=JavaScript>
-<!--
-
-//Disable right mouse click Script
-//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
-//For full source code, visit http://www.dynamicdrive.com
-
 var message="Function Disabled!";
 
 ///////////////////////////////////
@@ -51,7 +45,6 @@ document.onmousedown=clickIE4;
 
 document.oncontextmenu=new Function("alert(message);return false")
 
-// --> 
 </script>
 
  <style>
@@ -161,17 +154,11 @@ document.oncontextmenu=new Function("alert(message);return false")
                     
 
     <script type="text/javascript">
-
     $(document).ready(function(){
-
         $(".close").click(function(){
-
-            $("#myAlert").alert();
-
+           $('.alert-message').css({'display':'none'});
         });
-
     });  
-
     </script>
     <style>
         .alerts {
