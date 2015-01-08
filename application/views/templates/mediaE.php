@@ -1,6 +1,7 @@
 <script type="text/javascript">
     $(document).ready( function() {
 $("td.option").on("click",function(event) {
+     $('.alert-message').css({'display':'none'});
     var target = $(event.target);
     if (target.is('input:checkbox')) return;
     
@@ -12,6 +13,15 @@ $("td.option").on("click",function(event) {
     } else {
         checkbox.prop("checked",false);
          $(this).css({'background-color':'#cdcdcd'});
+    }
+});
+
+$('#test').submit(function(){
+    if(!$('#test input[type="checkbox"]').is(':checked')){
+        $('.alert-message').css({'display':'block'});
+        var msg="<strong>Error !</strong> Please select atleast one option.";
+      $('#errmsg').html(msg);
+      return false;
     }
 });
 
@@ -91,49 +101,54 @@ tr:nth-child(odd) {background: #dcdcdc}
                 <h1 class="top-head">Where did you heard about Mahotsav?</h1>
             </div>
     <!--top level completed-->
-    <?php echo form_open_multipart('welcome/feed'); ?>
+    <?php echo form_open_multipart('welcome/feed','id="test"'); ?>
             <div class="col-lg-12" id="innerbody">
                 <table style="font-size: 45px; width: 100%;padding: 0% 10% 0% 10%;margin: 0 auto 0 auto; ">
                     <tr class="tables">  
-                        <td class='option'><input id="option" type='checkbox' name='other' value='student'>
+                        <td class='option'><input id="option" type='checkbox' name='media[]' value='newspaper'>
                             <label for="student">&nbsp;&nbsp;Newspaper and Magazine</label></td>   
                     </tr>
                     <tr class="tables">  
-                        <td class='option'><input id="option" type='checkbox' name='other' value='student'>
+                        <td class='option'><input id="option" type='checkbox' name='media[]' value='television'>
                             <label for="student">&nbsp;&nbsp;Television</label></td>   
                     </tr>
                     <tr class="tables">  
-                        <td class='option'><input id="option" type='checkbox' name='other' value='student'>
+                        <td class='option'><input id="option" type='checkbox' name='media[]' value='fm radio'>
                             <label for="student">&nbsp;&nbsp;F.M. Radio</label></td>   
                     </tr>
                     <tr class="tables">  
-                        <td class='option'><input id="option" type='checkbox' name='other' value='student'>
+                        <td class='option'><input id="option" type='checkbox' name='media[]' value='social media'>
                             <label for="student">&nbsp;&nbsp;Social Media</label></td>   
                     </tr>
                     <tr class="tables">  
-                        <td class='option'><input id="option" type='checkbox' name='other' value='student'>
+                        <td class='option'><input id="option" type='checkbox' name='media[]' value='road miking'>
                             <label for="student">&nbsp;&nbsp;Road Miking</label></td>   
                     </tr>
                     <tr class="tables">  
-                        <td class='option'><input id="option" type='checkbox' name='other' value='student'>
+                        <td class='option'><input id="option" type='checkbox' name='media[]' value='friends'>
                             <label for="student">&nbsp;&nbsp;Friends/ Family/ Society</label></td>   
                     </tr>
                     <tr class="tables">  
-                        <td class='option'><input id="option" type='checkbox' name='other' value='student'>
+                        <td class='option'><input id="option" type='checkbox' name='other' value='ccic member'>
                             <label for="student">&nbsp;&nbsp;CCIC Members</label></td>   
                     </tr>
                     <tr class="tables">  
-                        <td class='option'><input id="option" type='checkbox' name='other' value='student'>
-                            <label for="student">&nbsp;&nbsp;Banner and Phamplets</label></td>   
+                        <td class='option'><input id="option" type='checkbox' name='media[]' value='banner pamphlet'>
+                            <label for="student">&nbsp;&nbsp;Banner and Pamphlet</label></td>   
                     </tr>
                     <tr class="tables">  
-                        <td class='option'><input id="option" type='checkbox' name='other' value='student'>
+                        <td class='option'><input id="option" type='checkbox' name='media[]' value='other'>
                             <label for="student">&nbsp;&nbsp;Other</label></td>   
                     </tr>
                 </table>         
             
         </div>
     <div class="col-lg-12" style='text-align: center;margin: 0 auto 0 auto;'>
+        <div class="col-lg-4" style="padding-top:35px;">
+    <div class="alert-message error">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong id="errmsg"></strong>
+    </div></div>
             <div class="col-lg-3" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
             
                 <input type="submit" class="btn btn-primary btn-lg" value='Continue'>

@@ -1,7 +1,7 @@
 <script type="text/javascript">
 $(document).ready( function() {
        $('div.circled-outer-image-programs').click(function() {
-         
+          $('.alert-message').css({'display':'none'});
 		$(this).find('input:radio').prop('checked', true);
 			$('div.circled-outer-image-programs').removeClass('checked11').addClass('jabat');
 			$('div.circled-outer-image-programs').removeClass('checked11').addClass('jabit');
@@ -11,6 +11,15 @@ $(document).ready( function() {
 		if ($(this).hasClass("jabit")) {
 			$(this).closest('div').removeClass('jabit').addClass('checked11');
 		}
+});
+
+$('#test').submit(function(){
+    if(!$('#test input[type="radio"]').is(':checked')){
+        $('.alert-message').css({'display':'block'});
+        var msg="<strong>Error !</strong> Please select your age group.";
+      $('#errmsg').html(msg);
+      return false;
+    }
 });
     });
 </script>
@@ -85,30 +94,30 @@ input[type="radio"]:checked + label:after {
                 <h1 class="top-head">How often did you visited Mahotsav?</h1>
             </div>
     <!--top level completed-->
-    <?php echo form_open_multipart('welcome/media'); ?>
+    <?php echo form_open_multipart('welcome/media','id="test"'); ?>
             <div class="col-lg-12" id="innerbody">
             
                 <div class="col-lg-6">
             <div class="img-circle circled-outer-image-programs" id="" style="background-color:#42cc2c;">
-                  <input id="option" type='radio' name='other' value='business' required>
+                  <input id="option" type='radio' name='frequency' value='new commer'>
                   <label for="it" style="text-align:center;">&nbsp;New Commer </label> 
             </div></div>
                 
                 <div class="col-lg-6">
             <div class="img-circle circled-outer-image-programs" id="" style="background-color:#42cc2c;">
-                     <input id="option" type='radio' name='other' value='business' required>
+                     <input id="option" type='radio' name='frequency' value='one time'>
   <label for="it" style="text-align:center;">&nbsp;One Time </label> 
             </div></div>
                 
                 <div class="col-lg-6">
             <div class="img-circle circled-outer-image-programs" id="" style="background-color:#42cc2c;">
-                   <input id="option" type='radio' name='other' value='business' required>
+                   <input id="option" type='radio' name='frequency' value='two times'>
   <label for="it">&nbsp;Two Times</label>   
             </div></div>
                 
                 <div class="col-lg-6">
             <div class="img-circle circled-outer-image-programs" id="" style="background-color:#42cc2c;">
-                   <input id="option" type='radio' name='other' value='business' required>
+                   <input id="option" type='radio' name='frequency' value='frequently'>
                    <label for="it">&nbsp;Frequently <br/>&nbsp;&nbsp;Visited </label>  
             </div></div>
                  
@@ -121,6 +130,11 @@ input[type="radio"]:checked + label:after {
             
         </div>
     <div class="col-lg-12" style='text-align: center;margin: 0 auto 0 auto;'>
+        <div class="col-lg-4" style="padding-top:35px;">
+    <div class="alert-message error">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong id="errmsg"></strong>
+    </div></div>
             <div class="col-lg-3" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
             
                 <input type="submit" class="btn btn-primary btn-lg" value='Continue'>

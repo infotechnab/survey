@@ -2,6 +2,7 @@
 <script type="text/javascript">
     $(document).ready( function() {
      $('div.panel').click(function() {
+          $('.alert-message').css({'display':'none'});
 		$(this).find('input:radio').prop('checked', true);
 			$('div.panel').removeClass('checked11').addClass('jabat');
 			$('div.panel').removeClass('checked11').addClass('jabit');
@@ -11,6 +12,17 @@
 		if ($(this).hasClass("jabit")) {
 			$(this).closest('div').removeClass('jabit').addClass('checked11');
 		}
+});
+
+
+
+$('#test').submit(function(){
+    if(!$('#test input[type="radio"]').is(':checked')){
+        $('.alert-message').css({'display':'block'});
+        var msg="<strong>Error !</strong> Please select your gender.";
+      $('#errmsg').html(msg);
+      return false;
+    }
 });
         
     });
@@ -50,7 +62,7 @@
                 <h1 class="top-head">I'm</h1>
             </div>
     <!--top level completed-->
-    <?php echo form_open_multipart('welcome/ageGroup'); ?>
+    <?php echo form_open_multipart('welcome/ageGroup','id="test"'); ?>
                        
             <div class='col-lg-12' id="innerbody">
              
@@ -58,7 +70,7 @@
                 <div class="panel panel-default text-center">
                      
                  <div id="male"></div>   
-                 <input type="radio" name='gender' value='male' required> Male
+                 <input type="radio" name='gender' value='male'> Male
                 </div>
                 </div>
                 
@@ -68,13 +80,18 @@
                 <div class="panel panel-default text-center">
                      
                  <div id="female"></div>   
-                 <input type="radio" name='gender' value='female' required> Female
+                 <input type="radio" name='gender' value='female'> Female
                 </div>
                 </div> 
                 
                 
             </div>
             <div class="col-lg-12" style='text-align: center;margin: 0 auto 0 auto;'>
+                <div class="col-lg-4" style="padding-top:35px;">
+    <div class="alert-message error">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong id="errmsg"></strong>
+    </div></div>
             <div class="col-lg-3" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
             
                 <input type="submit" class="btn btn-primary btn-lg" value='Continue'>

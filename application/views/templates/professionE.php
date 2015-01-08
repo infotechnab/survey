@@ -1,6 +1,7 @@
 <script type="text/javascript">
 $(document).ready( function() {
        $('div.thumbnail').click(function() {
+            $('.alert-message').css({'display':'none'});
 		$(this).find('input:radio').prop('checked', true);
 			$('div.thumbnail').removeClass('checked11').addClass('jabat');
 			$('div.thumbnail').removeClass('checked11').addClass('jabit');
@@ -11,6 +12,16 @@ $(document).ready( function() {
 			$(this).closest('div').removeClass('jabit').addClass('checked11');
 		}
 });
+
+$('#test').submit(function(){
+    if(!$('#test input[type="radio"]').is(':checked')){
+        $('.alert-message').css({'display':'block'});
+        var msg="<strong>Error !</strong> Please select where are you from.";
+      $('#errmsg').html(msg);
+      return false;
+    }
+});
+
     });
 </script>
 <style>
@@ -98,7 +109,7 @@ input[type="radio"]:checked + label:after {
                 <h1 class="top-head">My profession</h1>
             </div>
     <!--top level completed-->
-    <?php echo form_open_multipart('welcome/purpose'); ?>
+    <?php echo form_open_multipart('welcome/purpose','id="test"'); ?>
                        
             <div class='col-lg-12' id="innerbody">
              
@@ -106,7 +117,7 @@ input[type="radio"]:checked + label:after {
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='other' value='student' required>
+                    <input id="option" type='radio' name='profession' value='student'>
   <label for="student">&nbsp;Student </label>
 </div>      
             </div>
@@ -115,7 +126,7 @@ input[type="radio"]:checked + label:after {
           <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='other' value='business' required>
+                    <input id="option" type='radio' name='profession' value='business'>
   <label for="it">&nbsp;Business </label>
 </div>      
             </div>
@@ -124,7 +135,7 @@ input[type="radio"]:checked + label:after {
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='other' value='govofficer' required>
+                    <input id="option" type='radio' name='profession' value='govofficer'>
   <label for="entertainment">&nbsp;Gov. Officer </label>
 </div>      
             </div>
@@ -133,7 +144,7 @@ input[type="radio"]:checked + label:after {
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='other' value='teacher' required>
+                    <input id="option" type='radio' name='profession' value='teacher'>
   <label for="dairy">&nbsp;Teacher</label>
 </div>      
             </div>
@@ -142,7 +153,7 @@ input[type="radio"]:checked + label:after {
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='other' value='engineer' required>
+                    <input id="option" type='radio' name='profession' value='engineer'>
   <label for="dairy">&nbsp;Engineer</label>
 </div>      
             </div>
@@ -151,7 +162,7 @@ input[type="radio"]:checked + label:after {
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='other' value='doctor' required>
+                    <input id="option" type='radio' name='profession' value='doctor'>
   <label for="dairy">&nbsp;Doctor</label>
 </div>      
             </div>
@@ -160,7 +171,7 @@ input[type="radio"]:checked + label:after {
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='other' value='employee' required>
+                    <input id="option" type='radio' name='profession' value='employee'>
   <label for="dairy">&nbsp;Employee</label>
 </div>      
             </div>
@@ -169,7 +180,7 @@ input[type="radio"]:checked + label:after {
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='other' value='selfemployed' required>
+                    <input id="option" type='radio' name='profession' value='selfemployed'>
   <label for="purchase">&nbsp;Self Employed</label>
 </div>      
             </div>
@@ -178,7 +189,7 @@ input[type="radio"]:checked + label:after {
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='other' value='other' required>
+                    <input id="option" type='radio' name='profession' value='other'>
   <label for="other">&nbsp;Other</label>
 </div>      
             </div>
@@ -189,6 +200,11 @@ input[type="radio"]:checked + label:after {
             </div>
     
             <div class="col-lg-12" style='text-align: center;margin: 0 auto 0 auto;'>
+                <div class="col-lg-4" style="padding-top:35px;">
+    <div class="alert-message error">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong id="errmsg"></strong>
+    </div></div>
             <div class="col-lg-3" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
             
                 <input type="submit" class="btn btn-primary btn-lg" value='Continue'>

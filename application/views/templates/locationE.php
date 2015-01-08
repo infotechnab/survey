@@ -1,6 +1,7 @@
 <script type="text/javascript">
     $(document).ready( function() {
        $('div.panel').click(function() {
+           $('.alert-message').css({'display':'none'});
 		$(this).find('input:radio').prop('checked', true);
 			$('div.panel').removeClass('checked11').addClass('jabat');
 			$('div.panel').removeClass('checked11').addClass('jabit');
@@ -10,6 +11,16 @@
 		if ($(this).hasClass("jabit")) {
 			$(this).closest('div').removeClass('jabit').addClass('checked11');
 		}
+});
+
+
+$('#test').submit(function(){
+    if(!$('#test input[type="radio"]').is(':checked')){
+        $('.alert-message').css({'display':'block'});
+        var msg="<strong>Error !</strong> Please select where are you from.";
+      $('#errmsg').html(msg);
+      return false;
+    }
 });
     });
 </script>
@@ -48,7 +59,7 @@
                 <h1 class="top-head">I'm from</h1>
             </div>
     <!--top level completed-->
-    <?php echo form_open_multipart('welcome/profession'); ?>
+    <?php echo form_open_multipart('welcome/profession','id="test"'); ?>
                        
             <div class='col-lg-12' id="innerbody">
              
@@ -56,7 +67,7 @@
                 <div class="panel panel-default text-center">
                      
                  <div id="chitwan"></div>   
-                 <input type="radio" name='district' value='chitwan' required> Chitwan
+                 <input type="radio" name='district' value='chitwan'> Chitwan
                 </div>
                 </div>
        
@@ -64,7 +75,7 @@
                     <div class="panel panel-default text-center">
                      
                  <div id="nawalparasi"></div>   
-                 <input type="radio" name='district' value='nawalparasi' required> Nawalparasi
+                 <input type="radio" name='district' value='nawalparasi'> Nawalparasi
                 </div>
                 </div>
                 
@@ -72,25 +83,30 @@
                 <div class="panel panel-default text-center" id='district'>
                      
                  <div id="chitwan"></div>   
-                 <input type="radio" name='district' value='makawanpur' required> Makawanpur
+                 <input type="radio" name='district' value='makawanpur'> Makawanpur
                 </div>
                 </div>
        
                 <div class='district'>
                 <div class="panel thumbnail btn btn-info btn-lg" id='district' style="padding-top:135px;padding-bottom:135px;">
                               
-                 <input type="radio" name='district' value='nepal' class="" required> Nepal
+                 <input type="radio" name='district' value='nepal'> Nepal
                 
                 </div>
                     <div class="panel thumbnail btn btn-info btn-lg" id='district' style="padding-top:135px;padding-bottom:135px;">
 
-                 <input type="radio" name='district' value='foreign' class="" required> Other
+                 <input type="radio" name='district' value='foreign'> Other
                 </div>
                 </div>
 
             </div>
     
             <div class="col-lg-12" style='text-align: center;margin: 0 auto 0 auto;'>
+                <div class="col-lg-4" style="padding-top:35px;">
+    <div class="alert-message error">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong id="errmsg"></strong>
+    </div></div>
             <div class="col-lg-3" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
             
                 <input type="submit" class="btn btn-primary btn-lg" value='Continue'>
