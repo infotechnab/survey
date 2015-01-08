@@ -7,6 +7,7 @@ class Welcome extends CI_Controller {
         $this->load->helper('form');
          $this->load->helper('url');
          $this->load->library('session');
+         $this->load->model('dbmodel');
      }
     
     public function index()
@@ -161,19 +162,19 @@ class Welcome extends CI_Controller {
             $ageGroup = $this->session->userdata('age');
             $district = $this->session->userdata('district'); 
             $profession = $this->session->userdata('profession');
-            $purpose = $this->session->userdata('purpose');
+            $purposes = substr(implode(', ', $this->session->userdata('purpose')), 0);
             $frequency = $this->session->userdata('frequency');
-            $media = $this->session->userdata('media');
+           $media = substr(implode(', ', $this->session->userdata('media')), 0);
             $sachibalaya = $this->input->post('sachibalaya');
            $water = $this->input->post('water');
            $toilet = $this->input->post('toilet');
            $communication = $this->input->post('communication');
            $security = $this->input->post('security');
             
-            $data = array('language' => $language, 'gender'=>$gender, 'age'=>$ageGroup, 'district'=>$district, 'profession'=>$profession, 'purpose'=>$purpose, 'frequency'=>$frequency, 'media'=>$media, 'sachibalaya'=>$sachibalaya, 'water'=>$water, 'toilet'=>$toilet, 'communication'=>$communication, 'security'=>$security);
+            $data = array('gender'=>$gender, 'age_group'=>$ageGroup, 'location'=>$district, 'profession'=>$profession, 'purpose'=>$purposes, 'frequency'=>$frequency, 'media'=>$media, 'sachibalaya'=>$sachibalaya, 'water'=>$water, 'toilet'=>$toilet, 'communication'=>$communication, 'security'=>$security);
             $this->session->set_userdata($data);
             var_dump($data);
-            
+            $this->dbmodel->store_all_data($data);
             
             $this->load->view('templates/header');
             $this->load->view('templates/headHome');

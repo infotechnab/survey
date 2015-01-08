@@ -73,14 +73,7 @@ input[type="checkbox"]:checked + label:after {
 #purpose {
     padding: 125px 25px;
 } 
-.thumbnail
-{
-   background-color:#42cc2c; 
-}
-.thumbnail:hover, .thumbnail:active, .thumbnail:visited
-{
-    background-color: #cccc2c;
-}
+
 </style>
 
 

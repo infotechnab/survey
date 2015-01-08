@@ -3,12 +3,23 @@ html, body
     margin: 0; padding: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+   // overflow: hidden;
 }
 
 
-.circled-outer-image-programs{border:1px solid #ccc; box-shadow: 0px 2px 11px #ccc;width: 370px; height: 370px;padding: 10px;margin: 0 auto 10px auto;}
-
+.circled-outer-image-programs{background-color:#42cc2c;border:1px solid #ccc; box-shadow: 0px 2px 11px #ccc;width: 370px; height: 370px;padding: 10px;margin: 0 auto 10px auto;}
+.thumbnail
+{
+   background-color:#42cc2c; 
+}
+.thumbnail:hover, .thumbnail:active, .thumbnail:visited
+{
+    background-color: #cccc2c;
+}
+.tables:hover
+{
+    background-color: #cccc2c;
+}
 #firstpage
 {
     background: url("../images/kiosk.jpg");
@@ -55,7 +66,7 @@ html, body
         box-shadow: 0 0 10px rgba(0,0,0,.5);
         -moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
         -webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
-        background: #efefef;
+        background: #cccc2c;
     }
     .agegroup {
     background-color: #fff;

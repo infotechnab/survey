@@ -65,6 +65,10 @@ input[type="radio"]:checked + label:after {
 	max-width: 70px; /*an arbitratry number more than the icon's width*/
 	opacity: 1; /*for fade in effect*/
 }  
+.circled-outer-image-programs:hover
+{
+     background-color: #cccc2c;
+}
 </style>
 <section class='nextbody'>
     <div class="col-lg-12" style="background-color: #efffff;">
@@ -98,25 +102,25 @@ input[type="radio"]:checked + label:after {
             <div class="col-lg-12" id="innerbody">
             
                 <div class="col-lg-6">
-            <div class="img-circle circled-outer-image-programs" id="" style="background-color:#42cc2c;">
+            <div class="img-circle circled-outer-image-programs">
                   <input id="option" type='radio' name='frequency' value='new commer'>
                   <label for="it" style="text-align:center;">&nbsp;New Commer </label> 
             </div></div>
                 
                 <div class="col-lg-6">
-            <div class="img-circle circled-outer-image-programs" id="" style="background-color:#42cc2c;">
+            <div class="img-circle circled-outer-image-programs">
                      <input id="option" type='radio' name='frequency' value='one time'>
   <label for="it" style="text-align:center;">&nbsp;One Time </label> 
             </div></div>
                 
                 <div class="col-lg-6">
-            <div class="img-circle circled-outer-image-programs" id="" style="background-color:#42cc2c;">
+            <div class="img-circle circled-outer-image-programs" id="">
                    <input id="option" type='radio' name='frequency' value='two times'>
   <label for="it">&nbsp;Two Times</label>   
             </div></div>
                 
                 <div class="col-lg-6">
-            <div class="img-circle circled-outer-image-programs" id="" style="background-color:#42cc2c;">
+            <div class="img-circle circled-outer-image-programs">
                    <input id="option" type='radio' name='frequency' value='frequently'>
                    <label for="it">&nbsp;Frequently <br/>&nbsp;&nbsp;Visited </label>  
             </div></div>
