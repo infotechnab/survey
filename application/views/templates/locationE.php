@@ -34,7 +34,7 @@ $('#test').submit(function(){
 <section class='nextbody'>
     <div class="col-lg-12" style="background-color: #efffff;">
                 <div class="col-lg-4" style="padding-top:5px;">
-                <a href='#'><i class="fa fa-chevron-circle-left" style="font-size: 35px;"> Back </i></a>
+                <a href='<?php echo base_url().'index.php/welcome/backageGroup'; ?>'><i class="fa fa-chevron-circle-left" style="font-size: 35px;"> Back </i></a>
 
             </div>
             <div class="col-lg-4" style="text-align: center;padding-top: 10px;">
@@ -47,7 +47,7 @@ $('#test').submit(function(){
 </div>
             </div>
             <div class="col-lg-4" style="text-align: right;">
-               <a href='<?php echo base_url(); ?>' style="font-size: 35px;text-decoration: none;">Close <i class="fa fa-times-circle" style="font-size: 35px;"></i></a>
+               <a href='<?php echo base_url().'index.php/welcome/close'; ?>' style="font-size: 35px;text-decoration: none;">Close <i class="fa fa-times-circle" style="font-size: 35px;"></i></a>
 
             </div>
             </div>
