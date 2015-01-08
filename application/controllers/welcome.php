@@ -173,9 +173,7 @@ class Welcome extends CI_Controller {
             
             $data = array('gender'=>$gender, 'age_group'=>$ageGroup, 'location'=>$district, 'profession'=>$profession, 'purpose'=>$purposes, 'frequency'=>$frequency, 'media'=>$media, 'sachibalaya'=>$sachibalaya, 'water'=>$water, 'toilet'=>$toilet, 'communication'=>$communication, 'security'=>$security);
             $this->session->set_userdata($data);
-            var_dump($data);
-            $this->dbmodel->store_all_data($data);
-            
+            $this->dbmodel->store_all_data($data);      
             $this->load->view('templates/header');
             $this->load->view('templates/headHome');
                 $this->load->view('templates/thankYou');

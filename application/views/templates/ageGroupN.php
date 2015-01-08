@@ -1,91 +1,131 @@
-<script src="<?php echo base_url() . 'content/scripts/jquery.min.js'; ?>"></script>
-
 <script type="text/javascript">
-     var base_url = "http://localhost/survey/"; 
-    $(document).ready(function() {
-   $('.agegroup').on ("click",function () {
-        var ageGroup = $(this).attr('id');
-            $.ajax({
-                type: "POST",
-                url: base_url + "index.php/welcome/location",
-                data: {
-                    'gender': ageGroup,
-                    'language':'english'
-                },
-                success: function(msg)
-                {
-                     $("#body").html(msg);  
+    $(document).ready( function() {
+        $('div.panel').click(function() {
+            $('.alert-message').css({'display':'none'});
+            $(this).find('input:radio').prop('checked', true);
+            $('div.panel').removeClass('checked11').addClass('jabat');
+            $('div.panel').removeClass('checked11').addClass('jabit');
+            if ($(this).hasClass("jabat")) {
+                $(this).closest('div').removeClass('jabat').addClass('checked11');
+            }
+            if ($(this).hasClass("jabit")) {
+                $(this).closest('div').removeClass('jabit').addClass('checked11');
+            }
+        });
 
-                }
-            });
-    });
-
-        
+        $('#test').submit(function(){
+            if(!$('#test input[type="radio"]').is(':checked')){
+                $('.alert-message').css({'display':'block'});
+                var msg="<strong>साबधान !</strong> कृपया आफ्नो उमेर छन्नुहोस् ";
+                $('#errmsg').html(msg);
+                return false;
+            }
+        });
 
     });
 </script>
 <style>
-    .agegroup {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    display: block;
-    line-height: 1.42857;
-    margin-bottom: 20px;
-    padding: 4px;
-    transition: all 0.2s ease-in-out 0s;
-    float: left; width: 20%;
-}
+    .checked11
+    {
+        background: #cccc2c;
+    }
 </style>
-<section class="container" style="height: 495px;">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class='thumbnail'>
-                <h1 style='text-align: center;'>My age group </h1>
-            </div>
-        </div>
-        <div class="col-lg-12">
-            <div class='agegroup' style="opacity: 1;" id='0-14'>
-                     <h1 style="opacity: 1;">0-14 Years</h1>
-                    <div id='agegroups'> </div>
-                
-            </div>
-            
-            <div class='agegroup' style="opacity: 1;" id='15-24'>
-                     <h1 style="opacity: 1;">15-24 Years</h1>
-                    <div id='agegroups'> </div>
-                
-            </div>
-            
-            <div class='agegroup' style="opacity: 1;" id='25-54'>
-                     <h1 style="opacity: 1;">25-54 Years</h1>
-                    <div id='agegroups'> </div>
-                
-            </div>
-            
-            <div class='agegroup' style="opacity: 1;" id='55-64'>
-                     <h1 style="opacity: 1;">55-64 Years</h1>
-                    <div id='agegroups'> </div>
-                
-            </div>
-            
-            <div class='agegroup' style="opacity: 1;" id='65above'>
-                     <h1 style="opacity: 1;">65 Above</h1>
-                    <div id='agegroups'> </div>
-                
-            </div>
-            
-            
-            
-            
-        </div>
-<!--        <div class="col-lg-12">
-            <div class='thumbnail'>         
-                <img src="<?php //echo base_url() . 'content/images/kiosk.jpg'; ?>" alt="image_kiosk" class="img-responsive" style="height: 175px;"/>
-            </div>
-        </div>-->
+<section class='nextbody'>
+    <div class="col-lg-12" style="background-color: #efffff;">
+        <div class="col-lg-4" style="padding-top:5px;">
+            <a href='<?php echo base_url().'index.php/welcome/backGender'; ?>'><i class="fa fa-chevron-circle-left" style="font-size: 35px;"> पछाडी जानुहोस्  </i></a>
 
-        
+        </div>
+        <div class="col-lg-4" style="text-align: center;padding-top: 10px;">
+            <div class="progress progress-striped active" style="margin-bottom: 0px;height: 30px;">
+                <div class="progress-bar progress-bar-success" role="progressbar"
+                     aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                     style="width: 30%;padding-top: 5px;">
+                    <span class="sr-only" style="position: unset;">३०% पूर्ण </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4" style="text-align: right;">
+            <a href='<?php echo base_url().'index.php/welcome/close'; ?>' style="font-size: 35px;text-decoration: none;">बन्द गर्नुहोस् <i class="fa fa-times-circle" style="font-size: 35px;"></i></a>
+
+        </div>
     </div>
-    
+
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-lg-12">
+                <h1 class="top-head">म </h1>
+            </div>
+            <!--top level completed-->
+            <?php echo form_open_multipart('welcome/location','id="test"'); ?>
+            <div class="col-lg-12" id="innerbody">
+                <div class='agegroup'>
+                    <div class="panel panel-default text-center" style="position:relative;top: 425px;height: 300px;">
+
+
+                        <img src="<?php echo base_url().'content/images/0-15age.png' ?>" alt="" style="width:100%;"/>
+                        <input type="radio" name='age' value='0-14'> ०-१४ बर्ष
+                    </div>
+
+                </div>
+
+                <div class='agegroup'>
+                    <div class="panel panel-default text-center" style="position:relative;top: 325px;height: 400px;padding-top: 100px;">
+
+
+                        <img src="<?php echo base_url().'content/images/15-25Age.png' ?>" alt="" style="width:100%;"/>
+                        <input type="radio" name='age' value='15-24'> १५-२४ बर्ष
+                    </div>
+
+                </div>
+
+                <div class='agegroup'>
+                    <div class="panel panel-default text-center" style="position:relative;top: 225px;height: 500px;padding-top: 200px;">
+
+                        <!--                 <div id="male"></div>  -->
+                        <img src="<?php echo base_url().'content/images/25-54age.png' ?>" alt="" style="width:100%;"/>
+                        <input type="radio" name='age' value='25-54'>२५-५४ बर्ष
+                    </div>
+
+                </div>
+
+                <div class='agegroup'>
+                    <div class="panel panel-default text-center" style="position:relative;top: 125px;height: 600px;padding-top: 300px;">
+
+
+                        <img src="<?php echo base_url().'content/images/55-64age.png' ?>" alt="" style="width:100%;"/>
+                        <input type="radio" name='age' value='55-64'> ५५-६४ बर्ष
+                    </div>
+
+                </div>
+
+                <div class='agegroup'>
+                    <div class="panel panel-default text-center" style="position:relative;top: 25px;height: 700px;padding-top: 400px;">
+
+
+                        <img src="<?php echo base_url().'content/images/65+age.png' ?>" alt="" style="width:100%;"/>
+                        <input type="radio" name='age' value='65above'> ६५ बर्ष भन्दा माथी
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-lg-12" style='text-align: center;margin: 0 auto 0 auto;'>
+                <div class="col-lg-4" style="padding-top:35px;">
+                    <div class="alert-message error">
+                        <a href="#" class="close" data-dismiss="alert">&times;</a>
+                        <strong id="errmsg"></strong>
+                    </div></div>
+                <div class="col-lg-3" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
+
+                    <input type="submit" class="btn btn-primary btn-lg" value='जारी राख्नुहोस'>
+                </div>
+            </div>
+            <?php echo form_close(); ?>
+        </div>
+    </div>
+
+
 </section>
