@@ -58,9 +58,7 @@ input[type="radio"]:checked + label:after {
 }  
 </style>
 <section class='nextbody'>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12" style="background-color: #efffff;">
+    <div class="col-lg-12" style="background-color: #efffff;">
                 <div class="col-lg-4" style="padding-top:5px;">
                 <a href='#'><i class="fa fa-chevron-circle-left" style="font-size: 35px;"> Back </i></a>
 
@@ -79,9 +77,12 @@ input[type="radio"]:checked + label:after {
 
             </div>
             </div>
+    <div class="container">
+        <div class="row">
+            
             
             <div class="col-lg-12" style="text-align: center;">
-                <h1>How often did you visited Chitwan Mahotsav?</h1>
+                <h1 class="top-head">How often did you visited Mahotsav?</h1>
             </div>
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/media'); ?>

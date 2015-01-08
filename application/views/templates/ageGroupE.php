@@ -20,9 +20,7 @@
     }
 </style>
 <section class='nextbody'>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12" style="background-color: #efffff;">
+    <div class="col-lg-12" style="background-color: #efffff;">
                 <div class="col-lg-4" style="padding-top:5px;">
                 <a href='#'><i class="fa fa-chevron-circle-left" style="font-size: 35px;"> Back </i></a>
 
@@ -41,53 +39,62 @@
 
             </div>
             </div>
+    
+    <div class="container">
+        <div class="row">
             
-            <div class="col-lg-12" style="text-align: center;">
-                <h1>I'm....</h1>
+            
+            <div class="col-lg-12">
+                <h1 class="top-head">I'm</h1>
             </div>
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/location'); ?>
             <div class="col-lg-12" id="innerbody">
             <div class='agegroup'>
-                    <div class="panel panel-default text-center">
+                <div class="panel panel-default text-center" style="position:relative;top: 425px;height: 300px;">
                      
-                 <div id="male"></div>   
+
+                 <img src="<?php echo base_url().'content/images/0-15age.png' ?>" alt="" style="width:100%;"/>
                 <input type="radio" name='age' value='0-14' required> 0-14 years
                 </div>
                 
             </div>
             
             <div class='agegroup'>
-                    <div class="panel panel-default text-center">
+                    <div class="panel panel-default text-center" style="position:relative;top: 325px;height: 400px;padding-top: 100px;">
                      
-                 <div id="male"></div>   
+
+<img src="<?php echo base_url().'content/images/15-25Age.png' ?>" alt="" style="width:100%;"/>
          <input type="radio" name='age' value='15-24' required> 15-24 years
                 </div>
                 
             </div>
             
             <div class='agegroup'>
-                    <div class="panel panel-default text-center">
+                    <div class="panel panel-default text-center" style="position:relative;top: 225px;height: 500px;padding-top: 200px;">
                      
-                 <div id="male"></div>   
+<!--                 <div id="male"></div>  -->
+                  <img src="<?php echo base_url().'content/images/25-54age.png' ?>" alt="" style="width:100%;"/>
          <input type="radio" name='age' value='25-54' required> 25-54 years
                 </div>
                 
             </div>
             
             <div class='agegroup'>
-                    <div class="panel panel-default text-center">
+                    <div class="panel panel-default text-center" style="position:relative;top: 125px;height: 600px;padding-top: 300px;">
                      
-                 <div id="male"></div>   
+
+                  <img src="<?php echo base_url().'content/images/55-64age.png' ?>" alt="" style="width:100%;"/>
          <input type="radio" name='age' value='55-64' required> 55-64 years
                 </div>
                 
             </div>
             
             <div class='agegroup'>
-                     <div class="panel panel-default text-center">
+                     <div class="panel panel-default text-center" style="position:relative;top: 25px;height: 700px;padding-top: 400px;">
                      
-                 <div id="male"></div>   
+
+<img src="<?php echo base_url().'content/images/65+age.png' ?>" alt="" style="width:100%;"/>
          <input type="radio" name='age' value='65above' required> 65+ years
                 </div>
                 

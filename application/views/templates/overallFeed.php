@@ -71,21 +71,21 @@ $( "#security" ).val( "" + $( "#slider4" ).slider( "value" ) );
 <style>
     .option
     {
-       padding: 60px 15px; 
+       padding: 54px 15px; 
+       font-size: 30px;
+       width: 20%;
     }
     .value
     {
-        padding: 60px 15px;
+        padding: 54px 15px;
     }
     .optionval
     {
-        padding: 60px 15px; font-size: 30px;
-    }
+       font-size: 30px;
+            }
 </style>
 <section class='nextbody'>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12" style="background-color: #efffff;">
+    <div class="col-lg-12" style="background-color: #efffff;">
                 <div class="col-lg-4" style="padding-top:5px;">
                 <a href='#'><i class="fa fa-chevron-circle-left" style="font-size: 35px;"> Back </i></a>
 
@@ -104,21 +104,24 @@ $( "#security" ).val( "" + $( "#slider4" ).slider( "value" ) );
 
             </div>
             </div>
+    <div class="container">
+        <div class="row">
             
-            <div class="col-lg-12" style="text-align: center;">
-                <h1>How do you evaluate our services?</h1>
+            
+            <div class="col-lg-12">
+                <h1 class="top-head">How do you evaluate our services?</h1>
             </div>
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/thankYou'); ?>
             <div class="col-lg-12" id="innerbody">
 
       
-                <table>
+                <table width="100%">
                     <tr style="padding: 20px 0px 20px 0px;">
                         <td class='option'>
                             <label for="sachibalaya">Sachibalaya</label>
                         </td>
-                        <td class='optionval'> <input type="text" id="sachibalaya" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
+                        <td class='optionval'> <input type="text" id="sachibalaya" readonly style="border:0; color:#f6931f; font-weight:bold;width:60px;"></td>
                         <td class='value'>
                             <span id="number" style="position:absolute;top: 25px;left: 29%;">0</span>
                             <span id="number" style="position:absolute;top: 25px;left: 35%;">1</span>
@@ -133,14 +136,14 @@ $( "#security" ).val( "" + $( "#slider4" ).slider( "value" ) );
                         <td class='option'>
                             <label for="water">Water Supply</label>
                         </td>
-                        <td class='optionval'><input type="text" id="water" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
+                        <td class='optionval'><input type="text" id="water" readonly style="border:0; color:#f6931f; font-weight:bold;width:60px;"></td>
                         <td class='value'>
-                            <span id="number" style="position:absolute;top: 190px;left: 29%;">0</span>
-                            <span id="number" style="position:absolute;top: 190px;left: 35%;">1</span>
-                            <span id="number" style="position:absolute;top: 190px;left: 41%;">2</span>
-                            <span id="number" style="position:absolute;top: 190px;left: 47%;">3</span>
-                            <span id="number" style="position:absolute;top: 190px;left: 53%;">4</span> 
-                            <span id="number" style="position:absolute;top: 190px;left: 59%;">5</span>
+                            <span id="number" style="position:absolute;top: 180px;left: 29%;">0</span>
+                            <span id="number" style="position:absolute;top: 180px;left: 35%;">1</span>
+                            <span id="number" style="position:absolute;top: 180px;left: 41%;">2</span>
+                            <span id="number" style="position:absolute;top: 180px;left: 47%;">3</span>
+                            <span id="number" style="position:absolute;top: 180px;left: 53%;">4</span> 
+                            <span id="number" style="position:absolute;top: 180px;left: 59%;">5</span>
                             <div id="slider1"></div>
                         </td>
                     </tr>
@@ -148,14 +151,14 @@ $( "#security" ).val( "" + $( "#slider4" ).slider( "value" ) );
                         <td class='option'>
                             <label for="toilet">Toilet</label>
                         </td>
-                        <td class='optionval'><input type="text" id="toilet" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
+                        <td class='optionval'><input type="text" id="toilet" readonly style="border:0; color:#f6931f; font-weight:bold;width:60px;"></td>
                         <td class='value'>
-                            <span id="number" style="position:absolute;top: 355px;left: 29%;">0</span>
-                            <span id="number" style="position:absolute;top: 355px;left: 35%;">1</span>
-                            <span id="number" style="position:absolute;top: 355px;left: 41%;">2</span>
-                            <span id="number" style="position:absolute;top: 355px;left: 47%;">3</span>
-                            <span id="number" style="position:absolute;top: 355px;left: 53%;">4</span> 
-                            <span id="number" style="position:absolute;top: 355px;left: 59%;">5</span>
+                            <span id="number" style="position:absolute;top: 335px;left: 29%;">0</span>
+                            <span id="number" style="position:absolute;top: 335px;left: 35%;">1</span>
+                            <span id="number" style="position:absolute;top: 335px;left: 41%;">2</span>
+                            <span id="number" style="position:absolute;top: 335px;left: 47%;">3</span>
+                            <span id="number" style="position:absolute;top: 335px;left: 53%;">4</span> 
+                            <span id="number" style="position:absolute;top: 335px;left: 59%;">5</span>
                              <div id="slider2"></div>
                         </td>
                     </tr>
@@ -163,14 +166,14 @@ $( "#security" ).val( "" + $( "#slider4" ).slider( "value" ) );
                         <td class='option'>
                             <label for="communication">Communication</label>
                         </td>
-                        <td class='optionval'><input type="text" id="communication" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
+                        <td class='optionval'><input type="text" id="communication" readonly style="border:0; color:#f6931f; font-weight:bold;width:60px;"></td>
                         <td class='value'>
-                            <span id="number" style="position:absolute;top: 520px;left: 29%;">0</span>
-                            <span id="number" style="position:absolute;top: 520px;left: 35%;">1</span>
-                            <span id="number" style="position:absolute;top: 520px;left: 41%;">2</span>
-                            <span id="number" style="position:absolute;top: 520px;left: 47%;">3</span>
-                            <span id="number" style="position:absolute;top: 520px;left: 53%;">4</span> 
-                            <span id="number" style="position:absolute;top: 520px;left: 59%;">5</span>
+                            <span id="number" style="position:absolute;top: 490px;left: 29%;">0</span>
+                            <span id="number" style="position:absolute;top: 490px;left: 35%;">1</span>
+                            <span id="number" style="position:absolute;top: 490px;left: 41%;">2</span>
+                            <span id="number" style="position:absolute;top: 490px;left: 47%;">3</span>
+                            <span id="number" style="position:absolute;top: 490px;left: 53%;">4</span> 
+                            <span id="number" style="position:absolute;top: 490px;left: 59%;">5</span>
                              <div id="slider3"></div>
                         </td>
                     </tr>
@@ -178,21 +181,21 @@ $( "#security" ).val( "" + $( "#slider4" ).slider( "value" ) );
                         <td class='option'>
                            <label for="security">Security</label>
                         </td>
-                        <td class='optionval'><input type="text" id="security" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
+                        <td class='optionval'><input type="text" id="security" readonly style="border:0; color:#f6931f; font-weight:bold;width:60px;"></td>
                         <td class='value'>
-                            <span id="number" style="position:absolute;top: 685px;left: 29%;">0</span>
-                            <span id="number" style="position:absolute;top: 685px;left: 35%;">1</span>
-                            <span id="number" style="position:absolute;top: 685px;left: 41%;">2</span>
-                            <span id="number" style="position:absolute;top: 685px;left: 47%;">3</span>
-                            <span id="number" style="position:absolute;top: 685px;left: 53%;">4</span> 
-                            <span id="number" style="position:absolute;top: 685px;left: 59%;">5</span>
+                            <span id="number" style="position:absolute;top: 645px;left: 29%;">0</span>
+                            <span id="number" style="position:absolute;top: 645px;left: 35%;">1</span>
+                            <span id="number" style="position:absolute;top: 645px;left: 41%;">2</span>
+                            <span id="number" style="position:absolute;top: 645px;left: 47%;">3</span>
+                            <span id="number" style="position:absolute;top: 645px;left: 53%;">4</span> 
+                            <span id="number" style="position:absolute;top: 645px;left: 59%;">5</span>
                              <div id="slider4"></div>
                         </td>
                     </tr>
                     <tr>
                         <td class='option'></td>
                         <td class='optionval'></td>
-                        <td class='value'><input type="text" id="security" readonly style="border:0; color:#f6931f; font-weight:bold;"></td>
+                        <td class='value'><input type="text" id="security" readonly style="border:0; color:#f6931f; font-weight:bold;width:60px;"></td>
                     </tr>
                 </table>
         

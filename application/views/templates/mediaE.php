@@ -58,15 +58,13 @@ input[type="checkbox"]:checked + label:after {
 }
 .option
 {
-    padding: 10px 10px 10px 100px;
+    padding: 6px 10px 6px 100px;
 }
 tr:nth-child(even) {background: #cdcdcd}
 tr:nth-child(odd) {background: #dcdcdc}
 </style>
 <section class='nextbody'>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12" style="background-color: #efffff;">
+    <div class="col-lg-12" style="background-color: #efffff;">
                 <div class="col-lg-4" style="padding-top:5px;">
                 <a href='#'><i class="fa fa-chevron-circle-left" style="font-size: 35px;"> Back </i></a>
 
@@ -85,9 +83,12 @@ tr:nth-child(odd) {background: #dcdcdc}
 
             </div>
             </div>
+    <div class="container">
+        <div class="row">
+            
             
             <div class="col-lg-12" style="text-align: center;">
-                <h1>From where did you heard about Chitwan Mahotsav?</h1>
+                <h1 class="top-head">Where did you heard about Mahotsav?</h1>
             </div>
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/feed'); ?>
