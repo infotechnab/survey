@@ -26,7 +26,7 @@ html, body
     background-size: cover;
     //opacity: 0.2;
 }
-#solgan-quote-wraper{text-align: center;background:url(../images/homeScreen.jpg) no-repeat;padding: 0%;color: #fff;height: 1075px;background-size: 100%;}
+#solgan-quote-wraper{text-align: center;background:url(../images/front.jpg) no-repeat;padding: 0%;color: #fff;height: 1075px;background-size: 100%;}
 
 #male{text-align: center;background:url(../images/male.png)no-repeat;padding: 0%;color: #fff;height: 680px;background-size: 95%;}
 #cover-home

@@ -1,4 +1,32 @@
+<script>
 
+
+var seconds_left = 6;
+var interval = setInterval(function() {
+    document.getElementById('timer_div').innerHTML = --seconds_left;
+
+    if (seconds_left <= 0)
+    {
+       document.getElementById('timer_div').innerHTML = 'You are ready';
+        clearInterval(interval);
+    }
+}, 1000);
+
+function timeout_trigger() {
+    window.alert('Hello!');  
+}
+ 
+function timeout_init() {
+    setTimeout('timeout_trigger()', 15000);
+}
+</script>
+<style>
+    #textinput
+    {
+        width: 300px;
+        padding: 10px;
+    }
+</style>
 <section class='body'>
     <div class="container-fluid">
         <div class="row">
@@ -29,8 +57,13 @@
     <?php echo form_open_multipart('welcome/index'); ?>
             <div class="col-lg-12" style="height: 710px;">
                
+            <div class="col-lg-3" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
             
-            
+                <div id="timer_div" style="font-size: 60px;"></div>
+                
+                <input id="textinput" type="email" placeholder="Your email (optional)" name="email" onclick="timeout_init()">
+            </div>
+                
            
 
 
