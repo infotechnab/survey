@@ -17,7 +17,7 @@
         $('#test').submit(function(){
             if(!$('#test input[type="radio"]').is(':checked')){
                 $('.alert-message').css({'display':'block'});
-                var msg="<strong> साबधान  !</strong> कृपया आफ्नो ठेगाना छानुहोस् ";
+                var msg="<strong>कृपया ,</strong> आफ्नो ठेगाना छानुहोस् ";
                 $('#errmsg').html(msg);
                 return false;
             }
@@ -62,11 +62,11 @@
             <?php echo form_open_multipart('welcome/profession','id="test"'); ?>
 
             <div class='col-lg-12' id="innerbody">
-
+<div class="col-lg-12">
                 <div class='district'>
                     <div class="panel panel-default text-center">
 
-                        <div id="chitwan"></div>
+                       <img src="<?php echo base_url().'content/images/chitwan.png' ?>" alt=""><br/> 
                         <input type="radio" name='district' value='chitwan'> चितवन
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                 <div class='district'>
                     <div class="panel panel-default text-center">
 
-                        <div id="nawalparasi"></div>
+                         <img src="<?php echo base_url().'content/images/nawalparasi.png' ?>" alt="" >  <br/>
                         <input type="radio" name='district' value='nawalparasi'> नवलपरासी
                     </div>
                 </div>
@@ -82,23 +82,30 @@
                 <div class='district'>
                     <div class="panel panel-default text-center" id='district'>
 
-                        <div id="chitwan"></div>
+                       <img src="<?php echo base_url().'content/images/makwanpur.png' ?>" alt="">  <br/>
                         <input type="radio" name='district' value='makawanpur'> मकवानपुर
                     </div>
                 </div>
-
-                <div class='district'>
-                    <div class="panel thumbnail btn btn-info btn-lg" id='district' style="padding-top:135px;padding-bottom:135px;">
-
-                        <input type="radio" name='district' value='nepal'> नेपाल
-
-                    </div>
-                    <div class="panel thumbnail btn btn-info btn-lg" id='district' style="padding-top:135px;padding-bottom:135px;">
-
-                        <input type="radio" name='district' value='foreign'> अन्य
-                    </div>
+            </div>
+                
+                <div class="col-lg-12">
+               <div class='district'>
+                    <div class="panel panel-default text-center">
+                     
+                 <img src="<?php echo base_url().'content/images/nepalmap.png' ?>" alt="">  
+                 <input type="radio" name='district' value='other district'> अन्य जिल्ला 
                 </div>
-
+                </div>
+                <div class='district'>
+                    <div class="panel panel-default text-center">
+                     
+                 <img src="<?php echo base_url().'content/images/worldmap.png' ?>" alt="">  
+                 <input type="radio" name='district' value='foreign'> बिदेश 
+                </div>
+                </div>
+                </div>
+                
+               
             </div>
 
             <div class="col-lg-12" style='text-align: center;margin: 0 auto 0 auto;'>
@@ -109,7 +116,7 @@
                     </div></div>
                 <div class="col-lg-3" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
 
-                    <input type="submit" class="btn btn-primary btn-lg" value='  जारी राख्नुनोस   '>
+                    <input type="submit" class="btn btn-primary btn-lg" value='जारी राख्नुहोस'>
                 </div>
             </div>
             <?php echo form_close(); ?>

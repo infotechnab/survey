@@ -16,7 +16,7 @@
         $('#test').submit(function(){
             if(!$('#test input[type="radio"]').is(':checked')){
                 $('.alert-message').css({'display':'block'});
-                var msg="<strong>  साबधान  !</strong> कृपया कुनै एउटा छान्नुहोस् ";
+                var msg="<strong> कृपया ,</strong> कृपया कुनै एउटा छान्नुहोस् ";
                 $('#errmsg').html(msg);
                 return false;
             }
@@ -100,7 +100,7 @@
                 <div class="col-lg-6">
                     <div class="img-circle circled-outer-image-programs" id="" style="background-color:#42cc2c;">
                         <input id="option" type='radio' name='frequency' value='new commer'>
-                        <label for="it" style="text-align:center;">&nbsp;नवआगन्तुक  </label>
+                        <label for="it" style="text-align:center;">&nbsp;पहिलो पटक </label>
                     </div></div>
 
                 <div class="col-lg-6">

@@ -16,7 +16,7 @@
         $('#test').submit(function(){
             if(!$('#test input[type="radio"]').is(':checked')){
                 $('.alert-message').css({'display':'block'});
-                var msg="<strong>साबधान !</strong> कृपया आफ्नो उमेर छन्नुहोस् ";
+                var msg="<strong>कृपया ,</strong> आफ्नो उमेर छन्नुहोस् ";
                 $('#errmsg').html(msg);
                 return false;
             }
@@ -56,7 +56,7 @@
 
 
             <div class="col-lg-12">
-                <h1 class="top-head">म </h1>
+                <h1 class="top-head">मेरो उमेरसमुह </h1>
             </div>
             <!--top level completed-->
             <?php echo form_open_multipart('welcome/location','id="test"'); ?>

@@ -67,7 +67,7 @@
             <div class='col-lg-12' id="innerbody">
 
                 <div class='gender'>
-                    <div class="panel panel-default text-center">
+                    <div class="panel panel-default text-center" style="margin-bottom:0px;">
 
                         <div id="male"></div>
                         <input type="radio" name='gender' value='male'> पुरुष
@@ -77,12 +77,22 @@
 
 
                 <div class='gender'>
-                    <div class="panel panel-default text-center">
+                    <div class="panel panel-default text-center" style="margin-bottom:0px;">
 
                         <div id="female"></div>
                         <input type="radio" name='gender' value='female'> महिला
                     </div>
                 </div>
+                
+                <div class="col-lg-12" style="margin: 0 auto 0 auto;text-align: center;">
+                <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
+            <div class='panel thumbnail btn btn-info btn-lg' id='purpose'>
+                <div style="padding:20px;">
+                    <input id="option" type='radio' name='gender' value='other'>
+  <label for="it">&nbsp;अन्य </label>
+</div>      
+            </div>
+                </div></div>
 
 
             </div>

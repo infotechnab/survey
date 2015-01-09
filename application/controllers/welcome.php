@@ -20,11 +20,14 @@ class Welcome extends CI_Controller {
         
         public function gender()
         {
+            date_default_timezone_set('Asia/Kathmandu');
+    $date = date('Y-m-d H:i:s');
+    var_dump($date);
             if(isset($_POST['language']))
             {
                 $language= $_POST['language'];
             }else{$language='nepali';}
-            $data = array('language' => $language);
+            $data = array('start_time'=>$date,'language' => $language);
                 $this->session->set_userdata($data);
             $this->load->view('templates/header');
             if($language=='english'){
@@ -36,9 +39,10 @@ class Welcome extends CI_Controller {
         }
         public function ageGroup()
         {
+            $dateTime= $this->session->userdata('start_time');
             $language = $this->session->userdata('language');
             $gender = $this->input->post('gender');
-            $data = array('language' => $language, 'gender'=>$gender);
+            $data = array('start_time'=>$dateTime,'language' => $language, 'gender'=>$gender);
                 $this->session->set_userdata($data);
             $this->load->view('templates/header');
            if($language=='english'){
@@ -50,10 +54,11 @@ class Welcome extends CI_Controller {
         }
         public function location()
         {
+            $dateTime= $this->session->userdata('start_time');
             $language = $this->session->userdata('language');
             $gender = $this->session->userdata('gender');
             $ageGroup = $this->input->post('age');
-            $data = array('language' => $language, 'gender'=>$gender, 'age'=>$ageGroup);
+            $data = array('start_time'=>$dateTime,'language' => $language, 'gender'=>$gender, 'age'=>$ageGroup);
                 $this->session->set_userdata($data);
                 $this->load->view('templates/header');
             if($language=='english'){
@@ -65,12 +70,13 @@ class Welcome extends CI_Controller {
         }
         public function profession()
         {
+            $dateTime= $this->session->userdata('start_time');
             $language = $this->session->userdata('language');
             $gender = $this->session->userdata('gender');
             $ageGroup = $this->session->userdata('age');
             $district = $this->input->post('district');
 
-            $data = array('language' => $language, 'gender'=>$gender, 'age'=>$ageGroup, 'district'=>$district);
+            $data = array('start_time'=>$dateTime,'language' => $language, 'gender'=>$gender, 'age'=>$ageGroup, 'district'=>$district);
                 $this->session->set_userdata($data);
                 $this->load->view('templates/header');
             if($language=='english'){
@@ -82,12 +88,13 @@ class Welcome extends CI_Controller {
         }
         public function purpose()
         {
+            $dateTime= $this->session->userdata('start_time');
             $language = $this->session->userdata('language');
             $gender = $this->session->userdata('gender');
             $ageGroup = $this->session->userdata('age');
             $district = $this->session->userdata('district'); 
             $profession = $this->input->post('profession');
-           $data = array('language' => $language, 'gender'=>$gender, 'age'=>$ageGroup, 'district'=>$district, 'profession'=>$profession);
+           $data = array('start_time'=>$dateTime,'language' => $language, 'gender'=>$gender, 'age'=>$ageGroup, 'district'=>$district, 'profession'=>$profession);
                 $this->session->set_userdata($data);
              $this->load->view('templates/header');
             if($language=='english'){
@@ -99,13 +106,14 @@ class Welcome extends CI_Controller {
         }
         public function frequency()
         {
+            $dateTime= $this->session->userdata('start_time');
             $language = $this->session->userdata('language');
             $gender = $this->session->userdata('gender');
             $ageGroup = $this->session->userdata('age');
             $district = $this->session->userdata('district'); 
             $profession = $this->session->userdata('profession');
             $purpose = $this->input->post('purpose');
-            $data = array('language' => $language, 'gender'=>$gender, 'age'=>$ageGroup, 'district'=>$district, 'profession'=>$profession, 'purpose'=>$purpose);
+            $data = array('start_time'=>$dateTime,'language' => $language, 'gender'=>$gender, 'age'=>$ageGroup, 'district'=>$district, 'profession'=>$profession, 'purpose'=>$purpose);
                 $this->session->set_userdata($data);
              $this->load->view('templates/header');
             if($language=='english'){
@@ -117,6 +125,7 @@ class Welcome extends CI_Controller {
         }
         public function media()
         {
+            $dateTime= $this->session->userdata('start_time');
             $language = $this->session->userdata('language');
             $gender = $this->session->userdata('gender');
             $ageGroup = $this->session->userdata('age');
@@ -124,7 +133,7 @@ class Welcome extends CI_Controller {
             $profession = $this->session->userdata('profession');
             $purpose = $this->session->userdata('purpose');
             $frequency = $this->input->post('frequency');
-            $data = array('language' => $language, 'gender'=>$gender, 'age'=>$ageGroup, 'district'=>$district, 'profession'=>$profession, 'purpose'=>$purpose, 'frequency'=>$frequency);
+            $data = array('start_time'=>$dateTime,'language' => $language, 'gender'=>$gender, 'age'=>$ageGroup, 'district'=>$district, 'profession'=>$profession, 'purpose'=>$purpose, 'frequency'=>$frequency);
                 $this->session->set_userdata($data);
              $this->load->view('templates/header');
            if($language=='english'){
@@ -136,6 +145,7 @@ class Welcome extends CI_Controller {
         }
         public function feed()
         {
+            $dateTime= $this->session->userdata('start_time');
             $language = $this->session->userdata('language');
             $gender = $this->session->userdata('gender');
             $ageGroup = $this->session->userdata('age');
@@ -144,7 +154,7 @@ class Welcome extends CI_Controller {
             $purpose = $this->session->userdata('purpose');
             $frequency = $this->session->userdata('frequency');
             $media = $this->input->post('media');
-            $data = array('language' => $language, 'gender'=>$gender, 'age'=>$ageGroup, 'district'=>$district, 'profession'=>$profession, 'purpose'=>$purpose, 'frequency'=>$frequency, 'media'=>$media);
+            $data = array('start_time'=>$dateTime,'language' => $language, 'gender'=>$gender, 'age'=>$ageGroup, 'district'=>$district, 'profession'=>$profession, 'purpose'=>$purpose, 'frequency'=>$frequency, 'media'=>$media);
             $this->session->set_userdata($data);
             $this->load->view('templates/header');
            if($language=='english'){
@@ -157,6 +167,7 @@ class Welcome extends CI_Controller {
         
         public function thankYou()
         {
+            $dateTime= $this->session->userdata('start_time');
             $language = $this->session->userdata('language');
             $gender = $this->session->userdata('gender');
             $ageGroup = $this->session->userdata('age');
@@ -171,7 +182,7 @@ class Welcome extends CI_Controller {
            $communication = $this->input->post('communication');
            $security = $this->input->post('security');
             
-            $data = array('gender'=>$gender, 'age_group'=>$ageGroup, 'location'=>$district, 'profession'=>$profession, 'purpose'=>$purposes, 'frequency'=>$frequency, 'media'=>$media, 'sachibalaya'=>$sachibalaya, 'water'=>$water, 'toilet'=>$toilet, 'communication'=>$communication, 'security'=>$security);
+            $data = array('start_time'=>$dateTime,'gender'=>$gender, 'age_group'=>$ageGroup, 'location'=>$district, 'profession'=>$profession, 'purpose'=>$purposes, 'frequency'=>$frequency, 'media'=>$media, 'sachibalaya'=>$sachibalaya, 'water'=>$water, 'toilet'=>$toilet, 'communication'=>$communication, 'security'=>$security);
             $this->session->set_userdata($data);
             $this->dbmodel->store_all_data($data);      
             $this->load->view('templates/header');

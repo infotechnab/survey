@@ -106,7 +106,7 @@ input[type="radio"]:checked + label:after {
             
             
             <div class="col-lg-12">
-                <h1 class="top-head">My profession</h1>
+                <h1 class="top-head">My working domain</h1>
             </div>
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/purpose','id="test"'); ?>
@@ -117,8 +117,8 @@ input[type="radio"]:checked + label:after {
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='profession' value='student'>
-  <label for="student">&nbsp;Student </label>
+                    <input id="option" type='radio' name='profession' value='agriculture'>
+  <label for="student">&nbsp;Agriculture </label>
 </div>      
             </div>
         </div>
@@ -126,8 +126,8 @@ input[type="radio"]:checked + label:after {
           <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='profession' value='business'>
-  <label for="it">&nbsp;Business </label>
+                    <input id="option" type='radio' name='profession' value='tourism'>
+  <label for="it">&nbsp;Tourism sector</label>
 </div>      
             </div>
         </div>
@@ -135,8 +135,8 @@ input[type="radio"]:checked + label:after {
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='profession' value='govofficer'>
-  <label for="entertainment">&nbsp;Gov. Officer </label>
+                    <input id="option" type='radio' name='profession' value='health'>
+  <label for="entertainment">&nbsp;Health sector </label>
 </div>      
             </div>
         </div>
@@ -144,8 +144,8 @@ input[type="radio"]:checked + label:after {
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='profession' value='teacher'>
-  <label for="dairy">&nbsp;Teacher</label>
+                    <input id="option" type='radio' name='profession' value='education'>
+  <label for="dairy">&nbsp;Education</label>
 </div>      
             </div>
         </div>
@@ -153,8 +153,8 @@ input[type="radio"]:checked + label:after {
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='profession' value='engineer'>
-  <label for="dairy">&nbsp;Engineer</label>
+                    <input id="option" type='radio' name='profession' value='commerce'>
+  <label for="dairy">&nbsp;Commerce</label>
 </div>      
             </div>
         </div>
@@ -162,8 +162,17 @@ input[type="radio"]:checked + label:after {
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='profession' value='doctor'>
-  <label for="dairy">&nbsp;Doctor</label>
+                    <input id="option" type='radio' name='profession' value='industry'>
+  <label for="purchase">&nbsp;Industries</label>
+</div>      
+            </div>
+        </div> 
+                
+                <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
+            <div class='thumbnail btn btn-info btn-lg' id='purpose'>
+                <div style="padding:20px;">
+                    <input id="option" type='radio' name='profession' value='sports'>
+  <label for="dairy">&nbsp; Sports</label>
 </div>      
             </div>
         </div>
@@ -171,20 +180,13 @@ input[type="radio"]:checked + label:after {
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-                    <input id="option" type='radio' name='profession' value='employee'>
-  <label for="dairy">&nbsp;Employee</label>
+                    <input id="option" type='radio' name='profession' value='politics'>
+  <label for="dairy">&nbsp;Politics</label>
 </div>      
             </div>
         </div>
         
-        <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
-            <div class='thumbnail btn btn-info btn-lg' id='purpose'>
-                <div style="padding:20px;">
-                    <input id="option" type='radio' name='profession' value='selfemployed'>
-  <label for="purchase">&nbsp;Self Employed</label>
-</div>      
-            </div>
-        </div>      
+             
               
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>

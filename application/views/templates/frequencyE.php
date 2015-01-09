@@ -104,25 +104,25 @@ input[type="radio"]:checked + label:after {
                 <div class="col-lg-6">
             <div class="img-circle circled-outer-image-programs">
                   <input id="option" type='radio' name='frequency' value='new commer'>
-                  <label for="it" style="text-align:center;">&nbsp;New Commer </label> 
+                  <label for="it" style="text-align:center;">&nbsp;First Time </label> 
             </div></div>
                 
                 <div class="col-lg-6">
             <div class="img-circle circled-outer-image-programs">
                      <input id="option" type='radio' name='frequency' value='one time'>
-  <label for="it" style="text-align:center;">&nbsp;One Time </label> 
+  <label for="it" style="text-align:center;">&nbsp;Second Time </label> 
             </div></div>
                 
                 <div class="col-lg-6">
             <div class="img-circle circled-outer-image-programs" id="">
                    <input id="option" type='radio' name='frequency' value='two times'>
-  <label for="it">&nbsp;Two Times</label>   
+  <label for="it">&nbsp;Third Time</label>   
             </div></div>
                 
                 <div class="col-lg-6">
             <div class="img-circle circled-outer-image-programs">
                    <input id="option" type='radio' name='frequency' value='frequently'>
-                   <label for="it">&nbsp;Frequently <br/>&nbsp;&nbsp;Visited </label>  
+                   <label for="it">&nbsp;Frequently <br/>&nbsp;&nbsp;Visiting </label>  
             </div></div>
                  
             

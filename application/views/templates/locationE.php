@@ -62,11 +62,11 @@ $('#test').submit(function(){
     <?php echo form_open_multipart('welcome/profession','id="test"'); ?>
                        
             <div class='col-lg-12' id="innerbody">
-             
+             <div class="col-lg-12">
                 <div class='district'>
                 <div class="panel panel-default text-center">
                      
-                 <div id="chitwan"></div>   
+                    <img src="<?php echo base_url().'content/images/chitwan.png' ?>" alt=""><br/>  
                  <input type="radio" name='district' value='chitwan'> Chitwan
                 </div>
                 </div>
@@ -74,7 +74,7 @@ $('#test').submit(function(){
                 <div class='district'>
                     <div class="panel panel-default text-center">
                      
-                 <div id="nawalparasi"></div>   
+                        <img src="<?php echo base_url().'content/images/nawalparasi.png' ?>" alt="" >  <br/>
                  <input type="radio" name='district' value='nawalparasi'> Nawalparasi
                 </div>
                 </div>
@@ -82,23 +82,27 @@ $('#test').submit(function(){
                 <div class='district'>
                 <div class="panel panel-default text-center" id='district'>
                      
-                 <div id="chitwan"></div>   
+                 <img src="<?php echo base_url().'content/images/makwanpur.png' ?>" alt="">  <br/>
                  <input type="radio" name='district' value='makawanpur'> Makawanpur
                 </div>
                 </div>
-       
+             </div>
+                <div class="col-lg-12">
+               <div class='district'>
+                    <div class="panel panel-default text-center">
+                     
+                 <img src="<?php echo base_url().'content/images/nepalmap.png' ?>" alt="">  
+                 <input type="radio" name='district' value='other district'> Other District
+                </div>
+                </div>
                 <div class='district'>
-                <div class="panel thumbnail btn btn-info btn-lg" id='district' style="padding-top:135px;padding-bottom:135px;">
-                              
-                 <input type="radio" name='district' value='nepal'> Nepal
-                
-                </div>
-                    <div class="panel thumbnail btn btn-info btn-lg" id='district' style="padding-top:135px;padding-bottom:135px;">
-
-                 <input type="radio" name='district' value='foreign'> Other
+                    <div class="panel panel-default text-center">
+                     
+                 <img src="<?php echo base_url().'content/images/worldmap.png' ?>" alt="">  
+                 <input type="radio" name='district' value='foreign'> Other Country
                 </div>
                 </div>
-
+                </div>
             </div>
     
             <div class="col-lg-12" style='text-align: center;margin: 0 auto 0 auto;'>

@@ -71,9 +71,13 @@ input[type="checkbox"]:checked + label:after {
 }  
     
 #purpose {
-    padding: 125px 25px;
+   min-height: 357px;
+   padding: 100px 0px 0px 0px;
 } 
-
+label
+{
+    //-width: 140px; word-wrap: break-word;
+}
 </style>
 
 
@@ -113,8 +117,8 @@ input[type="checkbox"]:checked + label:after {
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-  <input id="option" type='checkbox' name='purpose[]' value='agriculture'>
-  <label for="student">&nbsp;Agriculture </label>
+  <input id="option" type='checkbox' name='purpose[]' value='goods and service'>
+  <label for="student">&nbsp;Info. of goods <br/>and Services </label>
 </div>      
             </div>
         </div>
@@ -122,8 +126,8 @@ input[type="checkbox"]:checked + label:after {
           <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-  <input id="option" type='checkbox' name='purpose[]' value='IT'>
-  <label for="it">&nbsp;IT </label>
+  <input id="option" type='checkbox' name='purpose[]' value='ICT'>
+  <label for="it">&nbsp;Info. of ICT </label>
 </div>      
             </div>
         </div>
@@ -140,8 +144,8 @@ input[type="checkbox"]:checked + label:after {
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-  <input id="option" type='checkbox' name='purpose[]' value='dairy'>
-  <label for="dairy">&nbsp;Dairy </label>
+  <input id="option" type='checkbox' name='purpose[]' value='purchase'>
+  <label for="dairy">&nbsp;Purchase of <br/> Goods </label>
 </div>      
             </div>
         </div>
@@ -149,8 +153,8 @@ input[type="checkbox"]:checked + label:after {
         <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
             <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                 <div style="padding:20px;">
-  <input id="option" type='checkbox' name='purpose[]' value='purchase'>
-  <label for="purchase">&nbsp;Purchase </label>
+  <input id="option" type='checkbox' name='purpose[]' value='agriculture'>
+  <label for="purchase">&nbsp;Agricultural <br/> Information </label>
 </div>      
             </div>
         </div>      

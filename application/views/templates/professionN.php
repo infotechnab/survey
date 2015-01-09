@@ -117,8 +117,8 @@
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
                     <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                         <div style="padding:20px;">
-                            <input id="option" type='radio' name='profession' value='student'>
-                            <label for="student">&nbsp;विधार्थी </label>
+                            <input id="option" type='radio' name='profession' value='agriculture'>
+                            <label for="student">&nbsp;कृषि </label>
                         </div>
                     </div>
                 </div>
@@ -126,8 +126,8 @@
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
                     <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                         <div style="padding:20px;">
-                            <input id="option" type='radio' name='profession' value='business '>
-                            <label for="it">&nbsp;व्यापार  </label>
+                            <input id="option" type='radio' name='profession' value='tourisn'>
+                            <label for="it">&nbsp;पर्यटन </label>
                         </div>
                     </div>
                 </div>
@@ -135,8 +135,8 @@
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
                     <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                         <div style="padding:20px;">
-                            <input id="option" type='radio' name='profession' value='govofficer'>
-                            <label for="entertainment">&nbsp;सरकारी कर्मचारी  </label>
+                            <input id="option" type='radio' name='profession' value='health'>
+                            <label for="entertainment">&nbsp;स्वास्थ्य क्षेत्र </label>
                         </div>
                     </div>
                 </div>
@@ -144,8 +144,8 @@
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
                     <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                         <div style="padding:20px;">
-                            <input id="option" type='radio' name='profession' value='teacher '>
-                            <label for="dairy">&nbsp;शिक्षक</label>
+                            <input id="option" type='radio' name='profession' value='education'>
+                            <label for="dairy">&nbsp;शिक्षा क्षेत्र </label>
                         </div>
                     </div>
                 </div>
@@ -153,8 +153,8 @@
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
                     <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                         <div style="padding:20px;">
-                            <input id="option" type='radio' name='profession' value='engineer'>
-                            <label for="dairy">&nbsp;ईन्जिनियर</label>
+                            <input id="option" type='radio' name='profession' value='commerce'>
+                            <label for="dairy">&nbsp;बाणिज्य </label>
                         </div>
                     </div>
                 </div>
@@ -162,8 +162,8 @@
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
                     <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                         <div style="padding:20px;">
-                            <input id="option" type='radio' name='profession' value='doctor '>
-                            <label for="dairy">&nbsp;डाक्टर </label>
+                            <input id="option" type='radio' name='profession' value='industry'>
+                            <label for="dairy">&nbsp;उध्योग </label>
                         </div>
                     </div>
                 </div>
@@ -171,8 +171,8 @@
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
                     <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                         <div style="padding:20px;">
-                            <input id="option" type='radio' name='profession' value='employee'>
-                            <label for="dairy">&nbsp;सामान्य कर्मचारी </label>
+                            <input id="option" type='radio' name='profession' value='sports'>
+                            <label for="dairy">&nbsp;खेलकुद </label>
                         </div>
                     </div>
                 </div>
@@ -180,8 +180,8 @@
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
                     <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                         <div style="padding:20px;">
-                            <input id="option" type='radio' name='profession' value='selfemployed'>
-                            <label for="purchase">&nbsp;स्वरोजगार </label>
+                            <input id="option" type='radio' name='profession' value='politics'>
+                            <label for="purchase">&nbsp;राजनीति </label>
                         </div>
                     </div>
                 </div>
@@ -207,7 +207,7 @@
                     </div></div>
                 <div class="col-lg-3" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
 
-                    <input type="submit" class="btn btn-primary btn-lg" value='जारी राख्नुनोस   '>
+                    <input type="submit" class="btn btn-primary btn-lg" value='जारी राख्नुहोस'>
                 </div>
             </div>
             <?php echo form_close(); ?>

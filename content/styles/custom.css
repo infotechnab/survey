@@ -28,13 +28,13 @@ html, body
 }
 #solgan-quote-wraper{text-align: center;background:url(../images/front.jpg) no-repeat;padding: 0%;color: #fff;height: 1075px;background-size: 100%;}
 
-#male{text-align: center;background:url(../images/male.png)no-repeat;padding: 0%;color: #fff;height: 680px;background-size: 95%;}
+#male{text-align: center;background:url(../images/male.png)no-repeat;padding: 0%;color: #fff;height: 515px;background-size: 95%;}
 #cover-home
 {
-    background:rgba(0, 0, 0, 0.4);
+    background:rgba(0, 0, 0, 0);
     height: 1075px;
 }
-#female{text-align: center;background:url(../images/female.png)no-repeat;padding: 0%;color: #fff;height: 680px;background-size: 95%;}
+#female{text-align: center;background:url(../images/female.png)no-repeat;padding: 0%;color: #fff;height: 515px;background-size: 95%;}
 .top-head{font-size: 70px;margin: 30px 0px 30px 0px;}
 
 
@@ -92,9 +92,12 @@ html, body
     line-height: 1.42857;
     padding: 4px;
     transition: all 0.2s ease-in-out 0s;
-    float: left; width: 25%;
+    float: left; width: 33.33%;
 }
 #innerbody
 {
     height: 740px;
+}
+.paragraph{
+    font-size: 25px;
 }

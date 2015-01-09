@@ -71,8 +71,9 @@
     }
 
     #purpose {
-        padding: 125px 25px;
-    }
+   min-height: 357px;
+   padding: 100px 0px 0px 0px;
+} 
     .thumbnail
     {
         background-color:#42cc2c;
@@ -120,8 +121,8 @@
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
                     <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                         <div style="padding:20px;">
-                            <input id="option" type='checkbox' name='purpose[]' value='agriculture'>
-                            <label for="student">&nbsp;कृषि  </label>
+                            <input id="option" type='checkbox' name='purpose[]' value='goods and service'>
+                            <label for="student">&nbsp;बस्तु / सेवाको <br/>जानकारी   </label>
                         </div>
                     </div>
                 </div>
@@ -129,8 +130,8 @@
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
                     <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                         <div style="padding:20px;">
-                            <input id="option" type='checkbox' name='purpose[]' value='IT'>
-                            <label for="it">&nbsp;सुचना प्रविधी  </label>
+                            <input id="option" type='checkbox' name='purpose[]' value='ICT'>
+                            <label for="it">&nbsp;सुचना तथा <br/>प्रबिधीको जानकारी  </label>
                         </div>
                     </div>
                 </div>
@@ -147,8 +148,8 @@
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
                     <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                         <div style="padding:20px;">
-                            <input id="option" type='checkbox' name='purpose[]' value='dairy'>
-                            <label for="dairy">&nbsp;डेरी   </label>
+                            <input id="option" type='checkbox' name='purpose[]' value='purchase'>
+                            <label for="dairy">&nbsp;बस्तु खरिद </label>
                         </div>
                     </div>
                 </div>
@@ -156,8 +157,8 @@
                 <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;'>
                     <div class='thumbnail btn btn-info btn-lg' id='purpose'>
                         <div style="padding:20px;">
-                            <input id="option" type='checkbox' name='purpose[]' value='purchase'>
-                            <label for="purchase">&nbsp;खरीद  </label>
+                            <input id="option" type='checkbox' name='purpose[]' value='agriculture'>
+                            <label for="purchase">&nbsp;कृषि सम्बन्धी <br/>जानकारी </label>
                         </div>
                     </div>
                 </div>
@@ -186,7 +187,7 @@
 
                 <div class="col-lg-3" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
 
-                    <input type="submit" class="btn btn-primary btn-lg" value='  जारी राख्नुनोस '>
+                    <input type="submit" class="btn btn-primary btn-lg" value='जारी राख्नुहोस'>
                 </div>
             </div>
             <?php echo form_close(); ?>
