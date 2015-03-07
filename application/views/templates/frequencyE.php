@@ -23,6 +23,11 @@ $('#test').submit(function(){
 });
     });
 </script>
+<script>
+window.setTimeout(function() {
+    indow.location.href = '<?php echo base_url().'index.php/welcome/close'; ?>';
+}, 10000);
+</script>
 <style>
      .checked11
     {

@@ -27,6 +27,11 @@
 
     });
 </script>
+<script>
+window.setTimeout(function() {
+    indow.location.href = '<?php echo base_url().'index.php/welcome/close'; ?>';
+}, 10000);
+</script>
 <style>
     .checked11
     {
@@ -84,17 +89,14 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-12" style="margin: 0 auto 0 auto;text-align: center;">
-                <div class="col-lg-4" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
-            <div class='panel thumbnail btn btn-info btn-lg' id='purpose'>
+                <div class="genderAsd">
+                    <div class='panel thumbnail btn btn-info btn-lg' id='purpose' style="min-height:710px; padding-top: 275px;">
                 <div style="padding:20px;">
                     <input id="option" type='radio' name='gender' value='other'>
   <label for="it">&nbsp;अन्य </label>
 </div>      
             </div>
-                </div></div>
-
-
+                </div>
             </div>
             <div class="col-lg-12" style='text-align: center;margin: 0 auto 0 auto;'>
                 <div class="col-lg-4" style="padding-top:35px;">

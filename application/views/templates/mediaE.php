@@ -28,6 +28,11 @@ $('#test').submit(function(){
     });
     
 </script>
+<script>
+window.setTimeout(function() {
+    indow.location.href = '<?php echo base_url().'index.php/welcome/close'; ?>';
+}, 10000);
+</script>
 <style>
     label {
 	position: relative;
@@ -98,7 +103,7 @@ tr:nth-child(odd) {background: #dcdcdc}
             
             
             <div class="col-lg-12" style="text-align: center;">
-                <h1 class="top-head">Where did you heard about Mahotsav?</h1>
+                <h1 class="top-head">Where did you hear about Mahotsav from?</h1>
             </div>
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/feed','id="test"'); ?>

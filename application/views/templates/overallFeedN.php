@@ -70,6 +70,11 @@
 
 </script>
 <script>
+window.setTimeout(function() {
+    indow.location.href = '<?php echo base_url().'index.php/welcome/close'; ?>';
+}, 15000);
+</script>
+<script>
     $(document).ready( function() {
         $('#test').submit(function(){
             var security = $( "#security" ).val();

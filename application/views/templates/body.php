@@ -35,9 +35,9 @@
         <div class="col-lg-12" style="padding-top:700px;">
              <p class="paragraph">Please Select the Language</P>
         <p class="paragraph" lang="ne">भाषा छनोट गर्नुहोस्</p>
-            <button type="button" id="english" class="btn btn-primary btn-lg">ENTER &#9654;<br/><span style="font-size: 14px;">For English Language</span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" id="english" class="btn btn-primary btn-lg">ENTER &#9654;<br/><span style="font-size: 34px;">For English Language</span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         
-            <button type="button" id="nepali" class="btn btn-primary btn-lg">सुरु गर्नुहोस् &#9654;<br/><span style="font-size: 14px;">नेपाली भाषाकोलागि</span></button>
+            <button type="button" id="nepali" class="btn btn-primary btn-lg">सुरु गर्नुहोस् &#9654;<br/><span style="font-size: 38px;">नेपाली भाषाकोलागि</span></button>
         
         </div>
         </div>

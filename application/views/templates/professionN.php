@@ -16,13 +16,18 @@
         $('#test').submit(function(){
             if(!$('#test input[type="radio"]').is(':checked')){
                 $('.alert-message').css({'display':'block'});
-                var msg="<strong>साबधान  !</strong>आफ्नो पेसा छान्नुहोस्  ";
+                var msg="<strong>कृपया ,</strong>आफ्नो पेसा छान्नुहोस्  ";
                 $('#errmsg').html(msg);
                 return false;
             }
         });
 
     });
+</script>
+<script>
+window.setTimeout(function() {
+    indow.location.href = '<?php echo base_url().'index.php/welcome/close'; ?>';
+}, 10000);
 </script>
 <style>
     .checked11

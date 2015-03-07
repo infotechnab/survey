@@ -33,13 +33,13 @@ window.setTimeout(function() {
             </div>
             
             <div class="col-lg-12" style="text-align: center;">
-                 <h1>तपाईंको महत्वपूर्ण जानकारीकालागी धन्यवाद ! </h1>
-                 <h3>Thank You for your valuable information</h3>
+                 <h1 style="font-size: 70px;">तपाईंको महत्वपूर्ण जानकारीकालागी धन्यवाद ! </h1>
+                 <h3 style="font-size: 90px;">Thank You </h3>
             
             </div>
     <!--top level completed-->
     <?php echo form_open_multipart('welcome/index'); ?>
-            <div class="col-lg-12" style="height: 710px;">
+            <div class="col-lg-12" style="height: 710px;text-align: center;">
                
             <div class="col-lg-3" style='text-align: center;margin: 0 auto 0 auto;float: none;'>
             
@@ -51,7 +51,7 @@ window.setTimeout(function() {
                 
             </div>
                 
-           
+           <img src="<?php echo base_url().'content/images/power.jpg'; ?>" alt="" />
 
 
 

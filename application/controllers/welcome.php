@@ -22,7 +22,7 @@ class Welcome extends CI_Controller {
         {
             date_default_timezone_set('Asia/Kathmandu');
     $date = date('Y-m-d H:i:s');
-    var_dump($date);
+    //var_dump($date);
             if(isset($_POST['language']))
             {
                 $language= $_POST['language'];
@@ -182,7 +182,7 @@ class Welcome extends CI_Controller {
            $communication = $this->input->post('communication');
            $security = $this->input->post('security');
             
-            $data = array('start_time'=>$dateTime,'gender'=>$gender, 'age_group'=>$ageGroup, 'location'=>$district, 'profession'=>$profession, 'purpose'=>$purposes, 'frequency'=>$frequency, 'media'=>$media, 'sachibalaya'=>$sachibalaya, 'water'=>$water, 'toilet'=>$toilet, 'communication'=>$communication, 'security'=>$security);
+            $data = array('start_time'=>$dateTime,'gender'=>$gender, 'age_group'=>$ageGroup, 'location'=>$district, 'profession'=>$profession, 'purpose'=>$purposes, 'frequency'=>$frequency, 'media'=>$media, 'sachibalaya'=>$sachibalaya, 'water'=>$water, 'toilet'=>$toilet, 'communication'=>$communication, 'security'=>$security, 'language'=>$language);
             $this->session->set_userdata($data);
             $this->dbmodel->store_all_data($data);      
             $this->load->view('templates/header');
